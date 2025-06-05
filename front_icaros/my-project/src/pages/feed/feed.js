@@ -58,7 +58,7 @@ const Feed = () => {
           setUserProfileImage(imgData.url.replace('dl=0', 'raw=1'));
         }
       } catch (error) {
-        console.error('Erro ao carregar perfil:', error);
+        console.error('Erro ao carregar perfil de usuario:', error);
       } finally {
         setProfileLoading(false);
       }
