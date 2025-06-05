@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+.error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.main-login {
+    width: 100vw;
+    height: 100vh;
+    background: #0f0f0f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-login {
+    width: 35vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.left-login > h1 {
+    margin-top: 0;
+    font-size: 3vh;
+    color: #f0f0f0;
+    text-align: center;
+}
+
+.left-login-image {
+    width: 20vw;
+    height: 30vh;
+    cursor: pointer;
+}
+
+.right-login {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-login {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px 35px;
+    background: #1f1f1f;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+}
+
+.card-login > h1 {
+    color: #ecd182;
+    font-weight: 800;
+    margin: 0 0 15px 0;
+}
+
+.text-field {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 5px 0;
+}
+
+.text-field input {
+    width: 15vw;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #2f2f2f;
+    color: #f0f0f0;
+    font-size: 10pt;
+    box-shadow: 0 10px 40px #1f1f1f;
+    outline: none;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+
+.text-field::placeholder {
+    color: #7f7f7f;
+}
+
+.pswd-bttn {
+    align-self: center;
+    font-size: 8pt;
+    color: #7f7f7f;
+    background-color: #2f2f2f;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 12px 0;
+    transition: all 0.3s ease;
+}
+
+.pswd-bttn:hover {
+    background-color: #ecd182;
+    color: #000;
+    box-shadow: 0 0 25px #fff;
+}
+
+.bttn-login {
+    width: 50%;
+    padding: 16px 0;
+    margin-top: 5px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #0f0f0f;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    box-shadow: 0 10px 40px -12px #000;
+    transition: all 0.3s ease;
+}
+
+.bttn-login:hover {
+    background-color: #ecd182;
+    color: #0f0f0f;
+    box-shadow: 0 0 25px #fff;
+}
+
+.bttn-signin-alt {
+    width: 100%;
+    padding: 15px 0;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 12px;
+    font-weight: 900;
+    font-size: 1.1rem;
+    color: #fff;
+    background-color: #ff6600;
+    cursor: pointer;
+    box-shadow: 0 0 10px #ff6600;
+    animation: pulse 2s infinite;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.bttn-signin-alt:hover {
+    background-color: #ff4500;
+    box-shadow: 0 0 15px #ff4500;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        box-shadow: 0 0 10px #ff6600;
+    }
+    50% {
+        box-shadow: 0 0 20px #ff3300;
+    }
+}
+
+.signup-text {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #ccc;
+    text-align: center;
+    font-style: italic;
+}
+
+/* Responsividade */
+
+@media only screen and (max-width: 950px) {
+    .card-login {
+        width: 85%;
+    }
+
+    .left-login-image {
+        width: 25vw;
+        height: 25vh;
+    }
+
+    .left-login {
+        width: 100%;
+        height: auto;
+    }
+
+    .right-login {
+        width: 100%;
+    }
+
+    .card-login {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .main-login {
+        flex-direction: column;
+    }
+
+    .left-login > h1 {
+        display: none;
+    }
+
+    .left-login {
+        width: 100%;
+        height: auto;
+    }
+
+    .right-login {
+        width: 100%;
+        height: auto;
+    }
+
+    .left-login-image {
+        width: 50vw;
+        margin-bottom: 50px;
+    }
+
+    .card-login {
+        width: 90%;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* Botão CADASTRE-SE destacado */
+.highlight-btn {
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background-color: #ecd182;
+    color: #0f0f0f;
+    border: none;
+    border-radius: 10px;
+    font-weight: 900;
+    font-size: 14pt;
+    cursor: pointer;
+    animation: pulse 2s infinite;
+    box-shadow: 0px 0px 20px -5px #ecd182;
+}
+
+/* Animação para chamar atenção */
+@keyframes pulse {
+    0% { transform: scale(1); box-shadow: 0 0 10px #ecd182; }
+    50% { transform: scale(1.05); box-shadow: 0 0 20px #ecd182; }
+    100% { transform: scale(1); box-shadow: 0 0 10px #ecd182; }
+}
+
+.signup-prompt {
+    color: #f0f0f0;
+    font-size: 12pt;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: 500;
+}

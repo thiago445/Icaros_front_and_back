@@ -1,0 +1,26 @@
+{
+    "apps": {
+        "script": "/home/liebe4735/applications/icaros/index.js",
+        "name": "icaros",
+        "max_memory_restart": "256M",
+        "exec_mode": "fork",
+        "ignore_watch": "[\"[\\/\\]\\./\", \"node_modules\"]",
+        "watch": false,
+        "log_date_format": "YYYY-MM-DD HH:mm Z",
+        "out_file": "/home/liebe4735/applications/icaros/stdout.log",
+        "error_file": "/home/liebe4735/applications/icaros/stdout.log",
+        "pid_file": "/home/liebe4735/applications/icaros/pid.pid",
+        "interpreter": "/usr/nodejs/node-v23.1.0/bin/node",
+        "env": {
+            "DBUSER": "icaros",
+            "DBPASS": "HRKfYEoFkWKvQpeY",
+            "DROPBOX_CLIENT_ID": "w5d09a5qb20oloz",
+            "DROPBOX_CLIENT_SECRET": "2n96h159au27fc4",
+            "DROPBOX_ACCESS_TOKEN": "sl.B_sv_45uvr33uShtUJMt23VPphUymss-4pzh2iu2ZofEHZskS8Lvfdg4B5YfRkFk35GZroC9dr79LgcTaLlwxVr2tN0HRll71C3HSFrO1Mz1mgfSn1K8OX9XpPstvAnS0ML-rquAwDq1dJI",
+            "DROPBOX_REFRESH_TOKEN": "L3ykl_pzviQAAAAAAAAAAc8N3aZOwgDVmUS1gqCBSZ1MpZsmvjdUtY3SMXRxUAlr",
+            "BASE_URL": "https://liebe4735.c44.integrator.host",
+            "NODE_ENV": "development",
+            "PORT": "58684"
+        }
+    }
+}

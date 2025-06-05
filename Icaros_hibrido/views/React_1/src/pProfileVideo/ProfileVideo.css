@@ -1,0 +1,44 @@
+.profile-video-container {
+    background-color: #1f1f1f;
+    border: 1px solid #2f2f2f;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column; /* Ajuste para alinhar os botões verticalmente */
+    align-items: center; /* Centraliza o vídeo e os botões */
+}
+
+.profile-video {
+    width: 100%;
+    max-width: 720px; /* Largura máxima */
+    height: 405px; /* Proporção 16:9 */
+    border-radius: 8px;
+    margin-bottom: 12px; /* Espaço entre o vídeo e os botões */
+}
+
+.edit-container {
+    display: flex;
+    gap: 8px; /* Espaço entre os botões */
+    margin-top: 8px;
+}
+
+.edit-container input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 200px;
+}
+
+.edit-container button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    background-color: #0073b1;
+    color: white;
+    cursor: pointer;
+}
+
+.edit-container button:hover {
+    background-color: #005682;
+}

@@ -1,0 +1,60 @@
+-- MySQL dump 10.13  Distrib 8.0.34, for Win64 (x86_64)
+--
+-- Host: 127.0.0.1    Database: db_icaros
+-- ------------------------------------------------------
+-- Server version	5.5.5-10.4.28-MariaDB
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!50503 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `tb_usuario_produtor`
+--
+
+DROP TABLE IF EXISTS `tb_usuario_produtor`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `tb_usuario_produtor` (
+  `ID_PRODUTOR` int(11) NOT NULL AUTO_INCREMENT,
+  `CNPJ` varchar(18) NOT NULL,
+  `NOME_FANTASIA` varchar(255) DEFAULT NULL,
+  `COMENTARIO` varchar(255) DEFAULT NULL,
+  `ID_USUARIO` int(11) DEFAULT NULL,
+  `IMAGEM` mediumblob DEFAULT NULL,
+  PRIMARY KEY (`ID_PRODUTOR`),
+  UNIQUE KEY `CNPJ` (`CNPJ`),
+  UNIQUE KEY `UK_augucyx3aul0coy1vjjmf7ar6` (`CNPJ`),
+  UNIQUE KEY `UK_pnmpshc9pf5fqa5vqqfc8tnr9` (`ID_USUARIO`),
+  CONSTRAINT `FK_USUARIO_PRODUTOR` FOREIGN KEY (`ID_USUARIO`) REFERENCES `tb_usuario` (`ID_USUARIO`),
+  CONSTRAINT `FKap0whuj9iemhdm8eibu624quj` FOREIGN KEY (`ID_USUARIO`) REFERENCES `tb_usuario` (`ID_USUARIO`)
+) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tb_usuario_produtor`
+--
+
+LOCK TABLES `tb_usuario_produtor` WRITE;
+/*!40000 ALTER TABLE `tb_usuario_produtor` DISABLE KEYS */;
+INSERT INTO `tb_usuario_produtor` VALUES (19,'51.384.3770001-22','KONDZILLA EDITORA LTDA',NULL,197,NULL),(20,'123456212','Producer Atuador',NULL,199,NULL),(21,'1234234212','Producer Atuador','aiiiiiiiiiiii eu vou gozaaar (rir)',200,NULL);
+/*!40000 ALTER TABLE `tb_usuario_produtor` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2024-06-15 20:57:48

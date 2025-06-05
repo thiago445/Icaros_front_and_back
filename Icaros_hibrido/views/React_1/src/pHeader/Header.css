@@ -1,0 +1,111 @@
+.header {
+    text-decoration: none;
+    display: flex;
+    color: #f0f0f0;
+    align-items: center;
+    justify-content: center; /* Alinha os itens com espaço entre eles */
+    padding: 10px 20px;
+    background-color: #1f1f1f; /* Cor de fundo do header */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para dar destaque */
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    color: #f0f0f0; /* Cor padrão do ícone e texto */
+    margin-left: 20px; /* Espaçamento à esquerda */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    transition: color 0.3s ease; /* Suaviza a transição de cor */
+    position: relative; /* Para posicionar o dropdown */
+}
+
+.profile:hover {
+    color: #ECD182; /* Cor ao passar o mouse */
+}
+
+.profile span {
+    margin-left: 8px; /* Espaço entre ícone e nome */
+}
+
+.dropdown {
+    position: absolute; /* Para posicionar em relação ao perfil */
+    top: 100%; /* Posiciona logo abaixo do perfil */
+    right: 0; /* Alinha à direita */
+    background-color: #f0f0f0; /* Fundo branco */
+    border: 1px solid #ccc; /* Borda cinza */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para dar destaque */
+    border-radius: 4px; /* Bordas arredondadas */
+    z-index: 1000; /* Garante que o dropdown fique acima de outros elementos */
+    text-decoration: none;
+}
+
+.dropdown-item {
+    padding: 10px 20px; /* Espaçamento interno */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    transition: background-color 0.3s ease; /* Suaviza a transição do fundo */
+    background-color: #1f1f1f;
+}
+
+.dropdown-item:hover {
+    background-color: #3f3f3f; /* Cor ao passar o mouse */
+}
+
+/* (restante do seu CSS) */
+
+.logo {
+    justify-content: center;
+    align-items: center;
+    font-size: 24px; /* Tamanho da fonte do logo */
+    font-weight: bold; /* Deixar o logo em negrito */
+    margin-right: 20px; /* Espaço entre a logo e a barra de pesquisa */
+}
+
+.logo-image {
+    height: 30px; /* Ajuste a altura conforme necessário */
+    width: auto; /* Largura proporcional */
+    object-fit: contain; /* Garante que a imagem seja redimensionada sem distorção */
+    margin-right: 8px; /* Espaço entre a logo e o texto */
+}
+
+.search-container {
+    display: flex; /* Mantém a barra de pesquisa flexível */
+    flex-grow: 1; /* Permite que o campo de pesquisa ocupe o espaço disponível */
+    max-width: 400px; /* Largura máxima do campo de pesquisa */
+}
+
+.search-input {
+    width: 100%; /* Largura total do contêiner */
+    padding: 10px; /* Espaçamento interno */
+    border: 1px solid #ccc; /* Borda padrão */
+    border-radius: 4px; /* Bordas arredondadas */
+    transition: border-color 0.3s ease; /* Suaviza a transição da cor da borda */
+}
+
+.search-input:focus {
+    border-color: #ECD182; /* Cor da borda ao focar */
+    outline: none; /* Remove contorno padrão */
+}
+
+.nav {
+    display: flex;
+    gap: 15px; /* Espaçamento entre os itens */
+    margin-left: 20px; /* Espaço entre a barra de pesquisa e a navbar */
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    color: #f0f0f0; /* Cor padrão dos ícones e texto */
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    transition: color 0.3s ease; /* Suaviza a transição de cor */
+}
+
+.nav-item:hover {
+    color: #ECD182; /* Cor ao passar o mouse */
+}
+
+.nav-item span {
+    margin-left: 5px; /* Espaço entre ícone e texto */
+}

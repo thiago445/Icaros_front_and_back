@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Upload Post</title>
+</head>
+<body>
+    
+    <h2>Create a Post</h2>
+    <form id="uploadForm" action="http://localhost:8081/posts/create" method="post" enctype="multipart/form-data">
+        <label for="title">Title:</label><br>
+        <input type="text" name="title" id="title"><br><br>
+        
+        <label for="description">Description:</label><br>
+        <textarea name="description" id="description" rows="4"></textarea><br><br>
+
+        <label for="video">Upload Video:</label><br>
+        <input type="file" name="video" id="video" accept="video/*"><br><br>
+        
+        <label for="image">Upload Image:</label><br>
+        <input type="file" name="image" id="image" accept="image/*"><br><br>
+
+        <button type="submit">Create Post</button>
+    </form>
+
+    <script>
+        const BASE_URL = document.getElementById('config').getAttribute('data-base-url');
+        document.getElementById("uploadForm").addEventListener("submit", function(event) {
+            const videoInput = document.getElementById("video");
+            const imageInput = document.getElementById("image");
+
+            // Verificar se os arquivos foram selecionados
+            if (!videoInput.files.length && !imageInput.files.length) {
+                event.preventDefault();
+                alert("Por favor, envie pelo menos um vídeo ou uma imagem.");
+            }
+        });
+    </script>
+</body>
+</html>

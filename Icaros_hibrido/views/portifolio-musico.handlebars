@@ -1,0 +1,73 @@
+<link rel="stylesheet" href="/css/styl-portMUSICO.css">
+<script src="/script/portifolio-musico.js"></script>
+
+
+
+<title>Perfil Músico</title>
+
+<div class="body-container">
+  <div class="trends">
+
+  </div>
+  <div class="profile-page">
+    <div class="profile-info">
+      <div class="profile-details">
+        <img class="profile-photo" id="imagem" src="" alt="Imagem do Perfil" />
+
+        <div class="profile-meta">
+          <h1 id="nome" name="nome" class="profile-name">
+
+          </h1>
+          <p id="email" name="email" class="profile-title">
+
+          </p>
+          <p id="opcoes" name="opcoes" class="profile-style">
+
+          </p>
+          <div class="profile-actions">
+            <button class="profile-button">Conectar</button>
+            <button class="profile-button"><a href="/attMUSICO">Editar Perfil</a></button>
+            <button class="profile-button">Compartilhar</button>
+          </div>
+        </div>
+      </div>
+      <div class="profile-summary">
+        <h2>Sobre</h2>
+        <p id="descricao" name="descricao">
+
+        </p>
+      </div>
+    </div>
+    <div class="feed">
+      <h2>Criar Postagem</h2>
+      <form class="create-post-form" id="uploadForm" action="http://localhost:8081/posts/create" method="post"
+        enctype="multipart/form-data">
+        <label for="title" class="post-label">Título:</label>
+        <input type="text" id="title" name="title" class="post-input" placeholder="Digite o título">
+
+        <label for="description" class="post-label">Descrição:</label>
+        <textarea id="description" name="description" class="post-textarea" placeholder="Escreva algo aqui..."
+          rows="4"></textarea>
+
+
+        <label for="image" class="post-label">Upload de Imagem:</label>
+        <input type="file" name="image" id="image" class="post-file-input" accept="image/*">
+
+        <div class="post-submit-buttons">
+          <button type="button" class="add-photo-button">
+            <span class="photo-icon">📷</span> Adicionar Imagem
+          </button>
+          <div>
+            <button type="submit" class="post-submit-button">Postar</button>
+            <button type="button" class="post-submit-button">Cancelar</button>
+          </div>
+        </div>
+      </form>
+
+      
+      <div class="posts"></div>
+
+    </div>
+  </div>
+</div>
+</div>

@@ -1,0 +1,51 @@
+<link href="/css/styl-login.css" rel="stylesheet" type="text/css">
+<title>Login</title>
+<script src="/script/Connection.js"></script>
+
+<div class="main-login">
+    <div class="left-login">
+        <a href="/">
+            <img src="/image/Icaros-branco.png" class="left-login-image" alt="Logo Ícaros">
+        </a>
+        <h1>
+            Desperte e voe até o Sol,<br>
+            venha fazer parte.
+        </h1>
+    </div>
+
+    <div class="right-login">
+
+        <div class="card-login">
+
+            <p class="signup-text">Ainda não tem conta? Cadastre-se agora!</p>
+            <button id="highlight-btn" class="highlight-btn">CADASTRE-SE</button>
+
+            <div style="height: 1px; background-color: #ecd182; width: 100%; margin: 20px 0;"></div>
+
+
+            <h1 style="margin-top: 25px;">LOGIN</h1>
+
+            <form action="">
+                <div class="text-field">
+                    <input type="email" name="email" id="email" placeholder="Email" required title="Digite seu email">
+                </div>
+
+                <div class="text-field">
+                    <input type="password" name="pswd" id="senha" placeholder="Password" title="Digite sua senha">
+                    <button class="pswd-bttn" type="button" id="toggleSenha" onclick="togglePasswordVisibility()">
+                        Mostrar Senha
+                    </button>
+                </div>
+            </form>
+
+            <button class="bttn-login" type="button" onclick="loginUser()">Login</button>
+
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    document.getElementById("SIGNIN").onclick = function () {
+        location.href = "/SIGNIN";
+    };
+</script>

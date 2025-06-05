@@ -1,0 +1,822 @@
+2024-11-15 20:27 -03:00: Error: /home/liebe4735/applications/icaros/node_modules/bcrypt/lib/binding/napi-v3/bcrypt_lib.node: invalid ELF header
+2024-11-15 20:27 -03:00:     at Object..node (node:internal/modules/cjs/loader:1735:18)
+2024-11-15 20:27 -03:00:     at Module.load (node:internal/modules/cjs/loader:1315:32)
+2024-11-15 20:27 -03:00:     at Function._load (node:internal/modules/cjs/loader:1125:12)
+2024-11-15 20:27 -03:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2024-11-15 20:27 -03:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:216:24)
+2024-11-15 20:27 -03:00:     at Module.<anonymous> (node:internal/modules/cjs/loader:1337:12)
+2024-11-15 20:27 -03:00:     at Hook._require.Module.require (/home/liebe4735/bin/lib/node_modules/require-in-the-middle/index.js:80:39)
+2024-11-15 20:27 -03:00:     at require (node:internal/modules/helpers:139:16)
+2024-11-15 20:27 -03:00:     at Object.<anonymous> (/home/liebe4735/applications/icaros/node_modules/bcrypt/bcrypt.js:6:16)
+2024-11-15 20:27 -03:00:     at Module._compile (node:internal/modules/cjs/loader:1572:14) {
+2024-11-15 20:27 -03:00:   code: 'ERR_DLOPEN_FAILED'
+2024-11-15 20:27 -03:00: }
+2024-11-15 20:27 -03:00: Error: /home/liebe4735/applications/icaros/node_modules/bcrypt/lib/binding/napi-v3/bcrypt_lib.node: invalid ELF header
+2024-11-15 20:27 -03:00:     at Object..node (node:internal/modules/cjs/loader:1735:18)
+2024-11-15 20:27 -03:00:     at Module.load (node:internal/modules/cjs/loader:1315:32)
+2024-11-15 20:27 -03:00:     at Function._load (node:internal/modules/cjs/loader:1125:12)
+2024-11-15 20:27 -03:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2024-11-15 20:27 -03:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:216:24)
+2024-11-15 20:27 -03:00:     at Module.<anonymous> (node:internal/modules/cjs/loader:1337:12)
+2024-11-15 20:27 -03:00:     at Hook._require.Module.require (/home/liebe4735/bin/lib/node_modules/require-in-the-middle/index.js:80:39)
+2024-11-15 20:27 -03:00:     at require (node:internal/modules/helpers:139:16)
+2024-11-15 20:27 -03:00:     at Object.<anonymous> (/home/liebe4735/applications/icaros/node_modules/bcrypt/bcrypt.js:6:16)
+2024-11-15 20:27 -03:00:     at Module._compile (node:internal/modules/cjs/loader:1572:14) {
+2024-11-15 20:27 -03:00:   code: 'ERR_DLOPEN_FAILED'
+2024-11-15 20:27 -03:00: }
+2024-11-15 20:27 -03:00: Error: /home/liebe4735/applications/icaros/node_modules/bcrypt/lib/binding/napi-v3/bcrypt_lib.node: invalid ELF header
+2024-11-15 20:27 -03:00:     at Object..node (node:internal/modules/cjs/loader:1735:18)
+2024-11-15 20:27 -03:00:     at Module.load (node:internal/modules/cjs/loader:1315:32)
+2024-11-15 20:27 -03:00:     at Function._load (node:internal/modules/cjs/loader:1125:12)
+2024-11-15 20:27 -03:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2024-11-15 20:27 -03:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:216:24)
+2024-11-15 20:27 -03:00:     at Module.<anonymous> (node:internal/modules/cjs/loader:1337:12)
+2024-11-15 20:27 -03:00:     at Hook._require.Module.require (/home/liebe4735/bin/lib/node_modules/require-in-the-middle/index.js:80:39)
+2024-11-15 20:27 -03:00:     at require (node:internal/modules/helpers:139:16)
+2024-11-15 20:27 -03:00:     at Object.<anonymous> (/home/liebe4735/applications/icaros/node_modules/bcrypt/bcrypt.js:6:16)
+2024-11-15 20:27 -03:00:     at Module._compile (node:internal/modules/cjs/loader:1572:14) {
+2024-11-15 20:27 -03:00:   code: 'ERR_DLOPEN_FAILED'
+2024-11-15 20:27 -03:00: }
+2024-11-15 20:27 -03:00: Error: /home/liebe4735/applications/icaros/node_modules/bcrypt/lib/binding/napi-v3/bcrypt_lib.node: invalid ELF header
+2024-11-15 20:27 -03:00:     at Object..node (node:internal/modules/cjs/loader:1735:18)
+2024-11-15 20:27 -03:00:     at Module.load (node:internal/modules/cjs/loader:1315:32)
+2024-11-15 20:27 -03:00:     at Function._load (node:internal/modules/cjs/loader:1125:12)
+2024-11-15 20:27 -03:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2024-11-15 20:27 -03:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:216:24)
+2024-11-15 20:27 -03:00:     at Module.<anonymous> (node:internal/modules/cjs/loader:1337:12)
+2024-11-15 20:27 -03:00:     at Hook._require.Module.require (/home/liebe4735/bin/lib/node_modules/require-in-the-middle/index.js:80:39)
+2024-11-15 20:27 -03:00:     at require (node:internal/modules/helpers:139:16)
+2024-11-15 20:27 -03:00:     at Object.<anonymous> (/home/liebe4735/applications/icaros/node_modules/bcrypt/bcrypt.js:6:16)
+2024-11-15 20:27 -03:00:     at Module._compile (node:internal/modules/cjs/loader:1572:14) {
+2024-11-15 20:27 -03:00:   code: 'ERR_DLOPEN_FAILED'
+2024-11-15 20:27 -03:00: }
+2024-11-15 20:27 -03:00: Error: /home/liebe4735/applications/icaros/node_modules/bcrypt/lib/binding/napi-v3/bcrypt_lib.node: invalid ELF header
+2024-11-15 20:27 -03:00:     at Object..node (node:internal/modules/cjs/loader:1735:18)
+2024-11-15 20:27 -03:00:     at Module.load (node:internal/modules/cjs/loader:1315:32)
+2024-11-15 20:27 -03:00:     at Function._load (node:internal/modules/cjs/loader:1125:12)
+2024-11-15 20:27 -03:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2024-11-15 20:27 -03:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:216:24)
+2024-11-15 20:27 -03:00:     at Module.<anonymous> (node:internal/modules/cjs/loader:1337:12)
+2024-11-15 20:27 -03:00:     at Hook._require.Module.require (/home/liebe4735/bin/lib/node_modules/require-in-the-middle/index.js:80:39)
+2024-11-15 20:27 -03:00:     at require (node:internal/modules/helpers:139:16)
+2024-11-15 20:27 -03:00:     at Object.<anonymous> (/home/liebe4735/applications/icaros/node_modules/bcrypt/bcrypt.js:6:16)
+2024-11-15 20:27 -03:00:     at Module._compile (node:internal/modules/cjs/loader:1572:14) {
+2024-11-15 20:27 -03:00:   code: 'ERR_DLOPEN_FAILED'
+2024-11-15 20:27 -03:00: }
+2024-11-15 20:27 -03:00: Error: /home/liebe4735/applications/icaros/node_modules/bcrypt/lib/binding/napi-v3/bcrypt_lib.node: invalid ELF header
+2024-11-15 20:27 -03:00:     at Object..node (node:internal/modules/cjs/loader:1735:18)
+2024-11-15 20:27 -03:00:     at Module.load (node:internal/modules/cjs/loader:1315:32)
+2024-11-15 20:27 -03:00:     at Function._load (node:internal/modules/cjs/loader:1125:12)
+2024-11-15 20:27 -03:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2024-11-15 20:27 -03:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:216:24)
+2024-11-15 20:27 -03:00:     at Module.<anonymous> (node:internal/modules/cjs/loader:1337:12)
+2024-11-15 20:27 -03:00:     at Hook._require.Module.require (/home/liebe4735/bin/lib/node_modules/require-in-the-middle/index.js:80:39)
+2024-11-15 20:27 -03:00:     at require (node:internal/modules/helpers:139:16)
+2024-11-15 20:27 -03:00:     at Object.<anonymous> (/home/liebe4735/applications/icaros/node_modules/bcrypt/bcrypt.js:6:16)
+2024-11-15 20:27 -03:00:     at Module._compile (node:internal/modules/cjs/loader:1572:14) {
+2024-11-15 20:27 -03:00:   code: 'ERR_DLOPEN_FAILED'
+2024-11-15 20:27 -03:00: }
+2024-11-15 20:27 -03:00: Error: /home/liebe4735/applications/icaros/node_modules/bcrypt/lib/binding/napi-v3/bcrypt_lib.node: invalid ELF header
+2024-11-15 20:27 -03:00:     at Object..node (node:internal/modules/cjs/loader:1735:18)
+2024-11-15 20:27 -03:00:     at Module.load (node:internal/modules/cjs/loader:1315:32)
+2024-11-15 20:27 -03:00:     at Function._load (node:internal/modules/cjs/loader:1125:12)
+2024-11-15 20:27 -03:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2024-11-15 20:27 -03:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:216:24)
+2024-11-15 20:27 -03:00:     at Module.<anonymous> (node:internal/modules/cjs/loader:1337:12)
+2024-11-15 20:27 -03:00:     at Hook._require.Module.require (/home/liebe4735/bin/lib/node_modules/require-in-the-middle/index.js:80:39)
+2024-11-15 20:27 -03:00:     at require (node:internal/modules/helpers:139:16)
+2024-11-15 20:27 -03:00:     at Object.<anonymous> (/home/liebe4735/applications/icaros/node_modules/bcrypt/bcrypt.js:6:16)
+2024-11-15 20:27 -03:00:     at Module._compile (node:internal/modules/cjs/loader:1572:14) {
+2024-11-15 20:27 -03:00:   code: 'ERR_DLOPEN_FAILED'
+2024-11-15 20:27 -03:00: }
+2024-11-15 20:27 -03:00: Error: /home/liebe4735/applications/icaros/node_modules/bcrypt/lib/binding/napi-v3/bcrypt_lib.node: invalid ELF header
+2024-11-15 20:27 -03:00:     at Object..node (node:internal/modules/cjs/loader:1735:18)
+2024-11-15 20:27 -03:00:     at Module.load (node:internal/modules/cjs/loader:1315:32)
+2024-11-15 20:27 -03:00:     at Function._load (node:internal/modules/cjs/loader:1125:12)
+2024-11-15 20:27 -03:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2024-11-15 20:27 -03:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:216:24)
+2024-11-15 20:27 -03:00:     at Module.<anonymous> (node:internal/modules/cjs/loader:1337:12)
+2024-11-15 20:27 -03:00:     at Hook._require.Module.require (/home/liebe4735/bin/lib/node_modules/require-in-the-middle/index.js:80:39)
+2024-11-15 20:27 -03:00:     at require (node:internal/modules/helpers:139:16)
+2024-11-15 20:27 -03:00:     at Object.<anonymous> (/home/liebe4735/applications/icaros/node_modules/bcrypt/bcrypt.js:6:16)
+2024-11-15 20:27 -03:00:     at Module._compile (node:internal/modules/cjs/loader:1572:14) {
+2024-11-15 20:27 -03:00:   code: 'ERR_DLOPEN_FAILED'
+2024-11-15 20:27 -03:00: }
+2024-11-15 20:27 -03:00: Error: /home/liebe4735/applications/icaros/node_modules/bcrypt/lib/binding/napi-v3/bcrypt_lib.node: invalid ELF header
+2024-11-15 20:27 -03:00:     at Object..node (node:internal/modules/cjs/loader:1735:18)
+2024-11-15 20:27 -03:00:     at Module.load (node:internal/modules/cjs/loader:1315:32)
+2024-11-15 20:27 -03:00:     at Function._load (node:internal/modules/cjs/loader:1125:12)
+2024-11-15 20:27 -03:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2024-11-15 20:27 -03:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:216:24)
+2024-11-15 20:27 -03:00:     at Module.<anonymous> (node:internal/modules/cjs/loader:1337:12)
+2024-11-15 20:27 -03:00:     at Hook._require.Module.require (/home/liebe4735/bin/lib/node_modules/require-in-the-middle/index.js:80:39)
+2024-11-15 20:27 -03:00:     at require (node:internal/modules/helpers:139:16)
+2024-11-15 20:27 -03:00:     at Object.<anonymous> (/home/liebe4735/applications/icaros/node_modules/bcrypt/bcrypt.js:6:16)
+2024-11-15 20:27 -03:00:     at Module._compile (node:internal/modules/cjs/loader:1572:14) {
+2024-11-15 20:27 -03:00:   code: 'ERR_DLOPEN_FAILED'
+2024-11-15 20:27 -03:00: }
+2024-11-15 20:27 -03:00: Error: /home/liebe4735/applications/icaros/node_modules/bcrypt/lib/binding/napi-v3/bcrypt_lib.node: invalid ELF header
+2024-11-15 20:27 -03:00:     at Object..node (node:internal/modules/cjs/loader:1735:18)
+2024-11-15 20:27 -03:00:     at Module.load (node:internal/modules/cjs/loader:1315:32)
+2024-11-15 20:27 -03:00:     at Function._load (node:internal/modules/cjs/loader:1125:12)
+2024-11-15 20:27 -03:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2024-11-15 20:27 -03:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:216:24)
+2024-11-15 20:27 -03:00:     at Module.<anonymous> (node:internal/modules/cjs/loader:1337:12)
+2024-11-15 20:27 -03:00:     at Hook._require.Module.require (/home/liebe4735/bin/lib/node_modules/require-in-the-middle/index.js:80:39)
+2024-11-15 20:27 -03:00:     at require (node:internal/modules/helpers:139:16)
+2024-11-15 20:27 -03:00:     at Object.<anonymous> (/home/liebe4735/applications/icaros/node_modules/bcrypt/bcrypt.js:6:16)
+2024-11-15 20:27 -03:00:     at Module._compile (node:internal/modules/cjs/loader:1572:14) {
+2024-11-15 20:27 -03:00:   code: 'ERR_DLOPEN_FAILED'
+2024-11-15 20:27 -03:00: }
+2024-11-15 20:27 -03:00: Error: /home/liebe4735/applications/icaros/node_modules/bcrypt/lib/binding/napi-v3/bcrypt_lib.node: invalid ELF header
+2024-11-15 20:27 -03:00:     at Object..node (node:internal/modules/cjs/loader:1735:18)
+2024-11-15 20:27 -03:00:     at Module.load (node:internal/modules/cjs/loader:1315:32)
+2024-11-15 20:27 -03:00:     at Function._load (node:internal/modules/cjs/loader:1125:12)
+2024-11-15 20:27 -03:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2024-11-15 20:27 -03:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:216:24)
+2024-11-15 20:27 -03:00:     at Module.<anonymous> (node:internal/modules/cjs/loader:1337:12)
+2024-11-15 20:27 -03:00:     at Hook._require.Module.require (/home/liebe4735/bin/lib/node_modules/require-in-the-middle/index.js:80:39)
+2024-11-15 20:27 -03:00:     at require (node:internal/modules/helpers:139:16)
+2024-11-15 20:27 -03:00:     at Object.<anonymous> (/home/liebe4735/applications/icaros/node_modules/bcrypt/bcrypt.js:6:16)
+2024-11-15 20:27 -03:00:     at Module._compile (node:internal/modules/cjs/loader:1572:14) {
+2024-11-15 20:27 -03:00:   code: 'ERR_DLOPEN_FAILED'
+2024-11-15 20:27 -03:00: }
+2024-11-15 20:27 -03:00: Error: /home/liebe4735/applications/icaros/node_modules/bcrypt/lib/binding/napi-v3/bcrypt_lib.node: invalid ELF header
+2024-11-15 20:27 -03:00:     at Object..node (node:internal/modules/cjs/loader:1735:18)
+2024-11-15 20:27 -03:00:     at Module.load (node:internal/modules/cjs/loader:1315:32)
+2024-11-15 20:27 -03:00:     at Function._load (node:internal/modules/cjs/loader:1125:12)
+2024-11-15 20:27 -03:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2024-11-15 20:27 -03:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:216:24)
+2024-11-15 20:27 -03:00:     at Module.<anonymous> (node:internal/modules/cjs/loader:1337:12)
+2024-11-15 20:27 -03:00:     at Hook._require.Module.require (/home/liebe4735/bin/lib/node_modules/require-in-the-middle/index.js:80:39)
+2024-11-15 20:27 -03:00:     at require (node:internal/modules/helpers:139:16)
+2024-11-15 20:27 -03:00:     at Object.<anonymous> (/home/liebe4735/applications/icaros/node_modules/bcrypt/bcrypt.js:6:16)
+2024-11-15 20:27 -03:00:     at Module._compile (node:internal/modules/cjs/loader:1572:14) {
+2024-11-15 20:27 -03:00:   code: 'ERR_DLOPEN_FAILED'
+2024-11-15 20:27 -03:00: }
+2024-11-15 20:27 -03:00: Error: /home/liebe4735/applications/icaros/node_modules/bcrypt/lib/binding/napi-v3/bcrypt_lib.node: invalid ELF header
+2024-11-15 20:27 -03:00:     at Object..node (node:internal/modules/cjs/loader:1735:18)
+2024-11-15 20:27 -03:00:     at Module.load (node:internal/modules/cjs/loader:1315:32)
+2024-11-15 20:27 -03:00:     at Function._load (node:internal/modules/cjs/loader:1125:12)
+2024-11-15 20:27 -03:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2024-11-15 20:27 -03:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:216:24)
+2024-11-15 20:27 -03:00:     at Module.<anonymous> (node:internal/modules/cjs/loader:1337:12)
+2024-11-15 20:27 -03:00:     at Hook._require.Module.require (/home/liebe4735/bin/lib/node_modules/require-in-the-middle/index.js:80:39)
+2024-11-15 20:27 -03:00:     at require (node:internal/modules/helpers:139:16)
+2024-11-15 20:27 -03:00:     at Object.<anonymous> (/home/liebe4735/applications/icaros/node_modules/bcrypt/bcrypt.js:6:16)
+2024-11-15 20:27 -03:00:     at Module._compile (node:internal/modules/cjs/loader:1572:14) {
+2024-11-15 20:27 -03:00:   code: 'ERR_DLOPEN_FAILED'
+2024-11-15 20:27 -03:00: }
+2024-11-15 20:27 -03:00: Error: /home/liebe4735/applications/icaros/node_modules/bcrypt/lib/binding/napi-v3/bcrypt_lib.node: invalid ELF header
+2024-11-15 20:27 -03:00:     at Object..node (node:internal/modules/cjs/loader:1735:18)
+2024-11-15 20:27 -03:00:     at Module.load (node:internal/modules/cjs/loader:1315:32)
+2024-11-15 20:27 -03:00:     at Function._load (node:internal/modules/cjs/loader:1125:12)
+2024-11-15 20:27 -03:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2024-11-15 20:27 -03:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:216:24)
+2024-11-15 20:27 -03:00:     at Module.<anonymous> (node:internal/modules/cjs/loader:1337:12)
+2024-11-15 20:27 -03:00:     at Hook._require.Module.require (/home/liebe4735/bin/lib/node_modules/require-in-the-middle/index.js:80:39)
+2024-11-15 20:27 -03:00:     at require (node:internal/modules/helpers:139:16)
+2024-11-15 20:27 -03:00:     at Object.<anonymous> (/home/liebe4735/applications/icaros/node_modules/bcrypt/bcrypt.js:6:16)
+2024-11-15 20:27 -03:00:     at Module._compile (node:internal/modules/cjs/loader:1572:14) {
+2024-11-15 20:27 -03:00:   code: 'ERR_DLOPEN_FAILED'
+2024-11-15 20:27 -03:00: }
+2024-11-15 20:27 -03:00: Error: /home/liebe4735/applications/icaros/node_modules/bcrypt/lib/binding/napi-v3/bcrypt_lib.node: invalid ELF header
+2024-11-15 20:27 -03:00:     at Object..node (node:internal/modules/cjs/loader:1735:18)
+2024-11-15 20:27 -03:00:     at Module.load (node:internal/modules/cjs/loader:1315:32)
+2024-11-15 20:27 -03:00:     at Function._load (node:internal/modules/cjs/loader:1125:12)
+2024-11-15 20:27 -03:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2024-11-15 20:27 -03:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:216:24)
+2024-11-15 20:27 -03:00:     at Module.<anonymous> (node:internal/modules/cjs/loader:1337:12)
+2024-11-15 20:27 -03:00:     at Hook._require.Module.require (/home/liebe4735/bin/lib/node_modules/require-in-the-middle/index.js:80:39)
+2024-11-15 20:27 -03:00:     at require (node:internal/modules/helpers:139:16)
+2024-11-15 20:27 -03:00:     at Object.<anonymous> (/home/liebe4735/applications/icaros/node_modules/bcrypt/bcrypt.js:6:16)
+2024-11-15 20:27 -03:00:     at Module._compile (node:internal/modules/cjs/loader:1572:14) {
+2024-11-15 20:27 -03:00:   code: 'ERR_DLOPEN_FAILED'
+2024-11-15 20:27 -03:00: }
+2024-11-15 20:27 -03:00: Error: /home/liebe4735/applications/icaros/node_modules/bcrypt/lib/binding/napi-v3/bcrypt_lib.node: invalid ELF header
+2024-11-15 20:27 -03:00:     at Object..node (node:internal/modules/cjs/loader:1735:18)
+2024-11-15 20:27 -03:00:     at Module.load (node:internal/modules/cjs/loader:1315:32)
+2024-11-15 20:27 -03:00:     at Function._load (node:internal/modules/cjs/loader:1125:12)
+2024-11-15 20:27 -03:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2024-11-15 20:27 -03:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:216:24)
+2024-11-15 20:27 -03:00:     at Module.<anonymous> (node:internal/modules/cjs/loader:1337:12)
+2024-11-15 20:27 -03:00:     at Hook._require.Module.require (/home/liebe4735/bin/lib/node_modules/require-in-the-middle/index.js:80:39)
+2024-11-15 20:27 -03:00:     at require (node:internal/modules/helpers:139:16)
+2024-11-15 20:27 -03:00:     at Object.<anonymous> (/home/liebe4735/applications/icaros/node_modules/bcrypt/bcrypt.js:6:16)
+2024-11-15 20:27 -03:00:     at Module._compile (node:internal/modules/cjs/loader:1572:14) {
+2024-11-15 20:27 -03:00:   code: 'ERR_DLOPEN_FAILED'
+2024-11-15 20:27 -03:00: }
+2024-11-15 20:31 -03:00: Error: Cannot find module 'ffmpeg-static'
+2024-11-15 20:31 -03:00: Require stack:
+2024-11-15 20:31 -03:00: - /home/liebe4735/applications/icaros/controllers/postController.js
+2024-11-15 20:31 -03:00: - /home/liebe4735/applications/icaros/routes/postRoutes.js
+2024-11-15 20:31 -03:00: - /home/liebe4735/applications/icaros/index.js
+2024-11-15 20:31 -03:00:     at Function._resolveFilename (node:internal/modules/cjs/loader:1246:15)
+2024-11-15 20:31 -03:00:     at Hook._require.Module.require (/home/liebe4735/bin/lib/node_modules/require-in-the-middle/index.js:61:29)
+2024-11-15 20:31 -03:00:     at require (node:internal/modules/helpers:139:16)
+2024-11-15 20:31 -03:00:     at Object.<anonymous> (/home/liebe4735/applications/icaros/controllers/postController.js:5:20)
+2024-11-15 20:31 -03:00:     at Module._compile (node:internal/modules/cjs/loader:1572:14)
+2024-11-15 20:31 -03:00:     at Object..js (node:internal/modules/cjs/loader:1709:10)
+2024-11-15 20:31 -03:00:     at Module.load (node:internal/modules/cjs/loader:1315:32)
+2024-11-15 20:31 -03:00:     at Function._load (node:internal/modules/cjs/loader:1125:12)
+2024-11-15 20:31 -03:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2024-11-15 20:31 -03:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:216:24) {
+2024-11-15 20:31 -03:00:   code: 'MODULE_NOT_FOUND',
+2024-11-15 20:31 -03:00:   requireStack: [
+2024-11-15 20:31 -03:00:     '/home/liebe4735/applications/icaros/controllers/postController.js',
+2024-11-15 20:31 -03:00:     '/home/liebe4735/applications/icaros/routes/postRoutes.js',
+2024-11-15 20:31 -03:00:     '/home/liebe4735/applications/icaros/index.js'
+2024-11-15 20:31 -03:00:   ]
+2024-11-15 20:31 -03:00: }
+2024-11-15 20:31 -03:00: Error: Cannot find module 'ffmpeg-static'
+2024-11-15 20:31 -03:00: Require stack:
+2024-11-15 20:31 -03:00: - /home/liebe4735/applications/icaros/controllers/postController.js
+2024-11-15 20:31 -03:00: - /home/liebe4735/applications/icaros/routes/postRoutes.js
+2024-11-15 20:31 -03:00: - /home/liebe4735/applications/icaros/index.js
+2024-11-15 20:31 -03:00:     at Function._resolveFilename (node:internal/modules/cjs/loader:1246:15)
+2024-11-15 20:31 -03:00:     at Hook._require.Module.require (/home/liebe4735/bin/lib/node_modules/require-in-the-middle/index.js:61:29)
+2024-11-15 20:31 -03:00:     at require (node:internal/modules/helpers:139:16)
+2024-11-15 20:31 -03:00:     at Object.<anonymous> (/home/liebe4735/applications/icaros/controllers/postController.js:5:20)
+2024-11-15 20:31 -03:00:     at Module._compile (node:internal/modules/cjs/loader:1572:14)
+2024-11-15 20:31 -03:00:     at Object..js (node:internal/modules/cjs/loader:1709:10)
+2024-11-15 20:31 -03:00:     at Module.load (node:internal/modules/cjs/loader:1315:32)
+2024-11-15 20:31 -03:00:     at Function._load (node:internal/modules/cjs/loader:1125:12)
+2024-11-15 20:31 -03:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2024-11-15 20:31 -03:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:216:24) {
+2024-11-15 20:31 -03:00:   code: 'MODULE_NOT_FOUND',
+2024-11-15 20:31 -03:00:   requireStack: [
+2024-11-15 20:31 -03:00:     '/home/liebe4735/applications/icaros/controllers/postController.js',
+2024-11-15 20:31 -03:00:     '/home/liebe4735/applications/icaros/routes/postRoutes.js',
+2024-11-15 20:31 -03:00:     '/home/liebe4735/applications/icaros/index.js'
+2024-11-15 20:31 -03:00:   ]
+2024-11-15 20:31 -03:00: }
+2024-11-15 20:31 -03:00: Error: Cannot find module 'ffmpeg-static'
+2024-11-15 20:31 -03:00: Require stack:
+2024-11-15 20:31 -03:00: - /home/liebe4735/applications/icaros/controllers/postController.js
+2024-11-15 20:31 -03:00: - /home/liebe4735/applications/icaros/routes/postRoutes.js
+2024-11-15 20:31 -03:00: - /home/liebe4735/applications/icaros/index.js
+2024-11-15 20:31 -03:00:     at Function._resolveFilename (node:internal/modules/cjs/loader:1246:15)
+2024-11-15 20:31 -03:00:     at Hook._require.Module.require (/home/liebe4735/bin/lib/node_modules/require-in-the-middle/index.js:61:29)
+2024-11-15 20:31 -03:00:     at require (node:internal/modules/helpers:139:16)
+2024-11-15 20:31 -03:00:     at Object.<anonymous> (/home/liebe4735/applications/icaros/controllers/postController.js:5:20)
+2024-11-15 20:31 -03:00:     at Module._compile (node:internal/modules/cjs/loader:1572:14)
+2024-11-15 20:31 -03:00:     at Object..js (node:internal/modules/cjs/loader:1709:10)
+2024-11-15 20:31 -03:00:     at Module.load (node:internal/modules/cjs/loader:1315:32)
+2024-11-15 20:31 -03:00:     at Function._load (node:internal/modules/cjs/loader:1125:12)
+2024-11-15 20:31 -03:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2024-11-15 20:31 -03:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:216:24) {
+2024-11-15 20:31 -03:00:   code: 'MODULE_NOT_FOUND',
+2024-11-15 20:31 -03:00:   requireStack: [
+2024-11-15 20:31 -03:00:     '/home/liebe4735/applications/icaros/controllers/postController.js',
+2024-11-15 20:31 -03:00:     '/home/liebe4735/applications/icaros/routes/postRoutes.js',
+2024-11-15 20:31 -03:00:     '/home/liebe4735/applications/icaros/index.js'
+2024-11-15 20:31 -03:00:   ]
+2024-11-15 20:31 -03:00: }
+2024-11-15 20:31 -03:00: Error: Cannot find module 'ffmpeg-static'
+2024-11-15 20:31 -03:00: Require stack:
+2024-11-15 20:31 -03:00: - /home/liebe4735/applications/icaros/controllers/postController.js
+2024-11-15 20:31 -03:00: - /home/liebe4735/applications/icaros/routes/postRoutes.js
+2024-11-15 20:31 -03:00: - /home/liebe4735/applications/icaros/index.js
+2024-11-15 20:31 -03:00:     at Function._resolveFilename (node:internal/modules/cjs/loader:1246:15)
+2024-11-15 20:31 -03:00:     at Hook._require.Module.require (/home/liebe4735/bin/lib/node_modules/require-in-the-middle/index.js:61:29)
+2024-11-15 20:31 -03:00:     at require (node:internal/modules/helpers:139:16)
+2024-11-15 20:31 -03:00:     at Object.<anonymous> (/home/liebe4735/applications/icaros/controllers/postController.js:5:20)
+2024-11-15 20:31 -03:00:     at Module._compile (node:internal/modules/cjs/loader:1572:14)
+2024-11-15 20:31 -03:00:     at Object..js (node:internal/modules/cjs/loader:1709:10)
+2024-11-15 20:31 -03:00:     at Module.load (node:internal/modules/cjs/loader:1315:32)
+2024-11-15 20:31 -03:00:     at Function._load (node:internal/modules/cjs/loader:1125:12)
+2024-11-15 20:31 -03:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2024-11-15 20:31 -03:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:216:24) {
+2024-11-15 20:31 -03:00:   code: 'MODULE_NOT_FOUND',
+2024-11-15 20:31 -03:00:   requireStack: [
+2024-11-15 20:31 -03:00:     '/home/liebe4735/applications/icaros/controllers/postController.js',
+2024-11-15 20:31 -03:00:     '/home/liebe4735/applications/icaros/routes/postRoutes.js',
+2024-11-15 20:31 -03:00:     '/home/liebe4735/applications/icaros/index.js'
+2024-11-15 20:31 -03:00:   ]
+2024-11-15 20:31 -03:00: }
+2024-11-15 20:31 -03:00: Error: Cannot find module 'ffmpeg-static'
+2024-11-15 20:31 -03:00: Require stack:
+2024-11-15 20:31 -03:00: - /home/liebe4735/applications/icaros/controllers/postController.js
+2024-11-15 20:31 -03:00: - /home/liebe4735/applications/icaros/routes/postRoutes.js
+2024-11-15 20:31 -03:00: - /home/liebe4735/applications/icaros/index.js
+2024-11-15 20:31 -03:00:     at Function._resolveFilename (node:internal/modules/cjs/loader:1246:15)
+2024-11-15 20:31 -03:00:     at Hook._require.Module.require (/home/liebe4735/bin/lib/node_modules/require-in-the-middle/index.js:61:29)
+2024-11-15 20:31 -03:00:     at require (node:internal/modules/helpers:139:16)
+2024-11-15 20:31 -03:00:     at Object.<anonymous> (/home/liebe4735/applications/icaros/controllers/postController.js:5:20)
+2024-11-15 20:31 -03:00:     at Module._compile (node:internal/modules/cjs/loader:1572:14)
+2024-11-15 20:31 -03:00:     at Object..js (node:internal/modules/cjs/loader:1709:10)
+2024-11-15 20:31 -03:00:     at Module.load (node:internal/modules/cjs/loader:1315:32)
+2024-11-15 20:31 -03:00:     at Function._load (node:internal/modules/cjs/loader:1125:12)
+2024-11-15 20:31 -03:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2024-11-15 20:31 -03:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:216:24) {
+2024-11-15 20:31 -03:00:   code: 'MODULE_NOT_FOUND',
+2024-11-15 20:31 -03:00:   requireStack: [
+2024-11-15 20:31 -03:00:     '/home/liebe4735/applications/icaros/controllers/postController.js',
+2024-11-15 20:31 -03:00:     '/home/liebe4735/applications/icaros/routes/postRoutes.js',
+2024-11-15 20:31 -03:00:     '/home/liebe4735/applications/icaros/index.js'
+2024-11-15 20:31 -03:00:   ]
+2024-11-15 20:31 -03:00: }
+2024-11-15 20:31 -03:00: Error: Cannot find module 'ffmpeg-static'
+2024-11-15 20:31 -03:00: Require stack:
+2024-11-15 20:31 -03:00: - /home/liebe4735/applications/icaros/controllers/postController.js
+2024-11-15 20:31 -03:00: - /home/liebe4735/applications/icaros/routes/postRoutes.js
+2024-11-15 20:31 -03:00: - /home/liebe4735/applications/icaros/index.js
+2024-11-15 20:31 -03:00:     at Function._resolveFilename (node:internal/modules/cjs/loader:1246:15)
+2024-11-15 20:31 -03:00:     at Hook._require.Module.require (/home/liebe4735/bin/lib/node_modules/require-in-the-middle/index.js:61:29)
+2024-11-15 20:31 -03:00:     at require (node:internal/modules/helpers:139:16)
+2024-11-15 20:31 -03:00:     at Object.<anonymous> (/home/liebe4735/applications/icaros/controllers/postController.js:5:20)
+2024-11-15 20:31 -03:00:     at Module._compile (node:internal/modules/cjs/loader:1572:14)
+2024-11-15 20:31 -03:00:     at Object..js (node:internal/modules/cjs/loader:1709:10)
+2024-11-15 20:31 -03:00:     at Module.load (node:internal/modules/cjs/loader:1315:32)
+2024-11-15 20:31 -03:00:     at Function._load (node:internal/modules/cjs/loader:1125:12)
+2024-11-15 20:31 -03:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2024-11-15 20:31 -03:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:216:24) {
+2024-11-15 20:31 -03:00:   code: 'MODULE_NOT_FOUND',
+2024-11-15 20:31 -03:00:   requireStack: [
+2024-11-15 20:31 -03:00:     '/home/liebe4735/applications/icaros/controllers/postController.js',
+2024-11-15 20:31 -03:00:     '/home/liebe4735/applications/icaros/routes/postRoutes.js',
+2024-11-15 20:31 -03:00:     '/home/liebe4735/applications/icaros/index.js'
+2024-11-15 20:31 -03:00:   ]
+2024-11-15 20:31 -03:00: }
+2024-11-15 20:31 -03:00: Error: Cannot find module 'ffmpeg-static'
+2024-11-15 20:31 -03:00: Require stack:
+2024-11-15 20:31 -03:00: - /home/liebe4735/applications/icaros/controllers/postController.js
+2024-11-15 20:31 -03:00: - /home/liebe4735/applications/icaros/routes/postRoutes.js
+2024-11-15 20:31 -03:00: - /home/liebe4735/applications/icaros/index.js
+2024-11-15 20:31 -03:00:     at Function._resolveFilename (node:internal/modules/cjs/loader:1246:15)
+2024-11-15 20:31 -03:00:     at Hook._require.Module.require (/home/liebe4735/bin/lib/node_modules/require-in-the-middle/index.js:61:29)
+2024-11-15 20:31 -03:00:     at require (node:internal/modules/helpers:139:16)
+2024-11-15 20:31 -03:00:     at Object.<anonymous> (/home/liebe4735/applications/icaros/controllers/postController.js:5:20)
+2024-11-15 20:31 -03:00:     at Module._compile (node:internal/modules/cjs/loader:1572:14)
+2024-11-15 20:31 -03:00:     at Object..js (node:internal/modules/cjs/loader:1709:10)
+2024-11-15 20:31 -03:00:     at Module.load (node:internal/modules/cjs/loader:1315:32)
+2024-11-15 20:31 -03:00:     at Function._load (node:internal/modules/cjs/loader:1125:12)
+2024-11-15 20:31 -03:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2024-11-15 20:31 -03:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:216:24) {
+2024-11-15 20:31 -03:00:   code: 'MODULE_NOT_FOUND',
+2024-11-15 20:31 -03:00:   requireStack: [
+2024-11-15 20:31 -03:00:     '/home/liebe4735/applications/icaros/controllers/postController.js',
+2024-11-15 20:31 -03:00:     '/home/liebe4735/applications/icaros/routes/postRoutes.js',
+2024-11-15 20:31 -03:00:     '/home/liebe4735/applications/icaros/index.js'
+2024-11-15 20:31 -03:00:   ]
+2024-11-15 20:31 -03:00: }
+2024-11-15 20:31 -03:00: Error: Cannot find module 'ffmpeg-static'
+2024-11-15 20:31 -03:00: Require stack:
+2024-11-15 20:31 -03:00: - /home/liebe4735/applications/icaros/controllers/postController.js
+2024-11-15 20:31 -03:00: - /home/liebe4735/applications/icaros/routes/postRoutes.js
+2024-11-15 20:31 -03:00: - /home/liebe4735/applications/icaros/index.js
+2024-11-15 20:31 -03:00:     at Function._resolveFilename (node:internal/modules/cjs/loader:1246:15)
+2024-11-15 20:31 -03:00:     at Hook._require.Module.require (/home/liebe4735/bin/lib/node_modules/require-in-the-middle/index.js:61:29)
+2024-11-15 20:31 -03:00:     at require (node:internal/modules/helpers:139:16)
+2024-11-15 20:31 -03:00:     at Object.<anonymous> (/home/liebe4735/applications/icaros/controllers/postController.js:5:20)
+2024-11-15 20:31 -03:00:     at Module._compile (node:internal/modules/cjs/loader:1572:14)
+2024-11-15 20:31 -03:00:     at Object..js (node:internal/modules/cjs/loader:1709:10)
+2024-11-15 20:31 -03:00:     at Module.load (node:internal/modules/cjs/loader:1315:32)
+2024-11-15 20:31 -03:00:     at Function._load (node:internal/modules/cjs/loader:1125:12)
+2024-11-15 20:31 -03:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2024-11-15 20:31 -03:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:216:24) {
+2024-11-15 20:31 -03:00:   code: 'MODULE_NOT_FOUND',
+2024-11-15 20:31 -03:00:   requireStack: [
+2024-11-15 20:31 -03:00:     '/home/liebe4735/applications/icaros/controllers/postController.js',
+2024-11-15 20:31 -03:00:     '/home/liebe4735/applications/icaros/routes/postRoutes.js',
+2024-11-15 20:31 -03:00:     '/home/liebe4735/applications/icaros/index.js'
+2024-11-15 20:31 -03:00:   ]
+2024-11-15 20:31 -03:00: }
+2024-11-15 20:31 -03:00: Error: Cannot find module 'ffmpeg-static'
+2024-11-15 20:31 -03:00: Require stack:
+2024-11-15 20:31 -03:00: - /home/liebe4735/applications/icaros/controllers/postController.js
+2024-11-15 20:31 -03:00: - /home/liebe4735/applications/icaros/routes/postRoutes.js
+2024-11-15 20:31 -03:00: - /home/liebe4735/applications/icaros/index.js
+2024-11-15 20:31 -03:00:     at Function._resolveFilename (node:internal/modules/cjs/loader:1246:15)
+2024-11-15 20:31 -03:00:     at Hook._require.Module.require (/home/liebe4735/bin/lib/node_modules/require-in-the-middle/index.js:61:29)
+2024-11-15 20:31 -03:00:     at require (node:internal/modules/helpers:139:16)
+2024-11-15 20:31 -03:00:     at Object.<anonymous> (/home/liebe4735/applications/icaros/controllers/postController.js:5:20)
+2024-11-15 20:31 -03:00:     at Module._compile (node:internal/modules/cjs/loader:1572:14)
+2024-11-15 20:31 -03:00:     at Object..js (node:internal/modules/cjs/loader:1709:10)
+2024-11-15 20:31 -03:00:     at Module.load (node:internal/modules/cjs/loader:1315:32)
+2024-11-15 20:31 -03:00:     at Function._load (node:internal/modules/cjs/loader:1125:12)
+2024-11-15 20:31 -03:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2024-11-15 20:31 -03:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:216:24) {
+2024-11-15 20:31 -03:00:   code: 'MODULE_NOT_FOUND',
+2024-11-15 20:31 -03:00:   requireStack: [
+2024-11-15 20:31 -03:00:     '/home/liebe4735/applications/icaros/controllers/postController.js',
+2024-11-15 20:31 -03:00:     '/home/liebe4735/applications/icaros/routes/postRoutes.js',
+2024-11-15 20:31 -03:00:     '/home/liebe4735/applications/icaros/index.js'
+2024-11-15 20:31 -03:00:   ]
+2024-11-15 20:31 -03:00: }
+2024-11-15 20:31 -03:00: Error: Cannot find module 'ffmpeg-static'
+2024-11-15 20:31 -03:00: Require stack:
+2024-11-15 20:31 -03:00: - /home/liebe4735/applications/icaros/controllers/postController.js
+2024-11-15 20:31 -03:00: - /home/liebe4735/applications/icaros/routes/postRoutes.js
+2024-11-15 20:31 -03:00: - /home/liebe4735/applications/icaros/index.js
+2024-11-15 20:31 -03:00:     at Function._resolveFilename (node:internal/modules/cjs/loader:1246:15)
+2024-11-15 20:31 -03:00:     at Hook._require.Module.require (/home/liebe4735/bin/lib/node_modules/require-in-the-middle/index.js:61:29)
+2024-11-15 20:31 -03:00:     at require (node:internal/modules/helpers:139:16)
+2024-11-15 20:31 -03:00:     at Object.<anonymous> (/home/liebe4735/applications/icaros/controllers/postController.js:5:20)
+2024-11-15 20:31 -03:00:     at Module._compile (node:internal/modules/cjs/loader:1572:14)
+2024-11-15 20:31 -03:00:     at Object..js (node:internal/modules/cjs/loader:1709:10)
+2024-11-15 20:31 -03:00:     at Module.load (node:internal/modules/cjs/loader:1315:32)
+2024-11-15 20:31 -03:00:     at Function._load (node:internal/modules/cjs/loader:1125:12)
+2024-11-15 20:31 -03:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2024-11-15 20:31 -03:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:216:24) {
+2024-11-15 20:31 -03:00:   code: 'MODULE_NOT_FOUND',
+2024-11-15 20:31 -03:00:   requireStack: [
+2024-11-15 20:31 -03:00:     '/home/liebe4735/applications/icaros/controllers/postController.js',
+2024-11-15 20:31 -03:00:     '/home/liebe4735/applications/icaros/routes/postRoutes.js',
+2024-11-15 20:31 -03:00:     '/home/liebe4735/applications/icaros/index.js'
+2024-11-15 20:31 -03:00:   ]
+2024-11-15 20:31 -03:00: }
+2024-11-15 20:31 -03:00: Error: Cannot find module 'ffmpeg-static'
+2024-11-15 20:31 -03:00: Require stack:
+2024-11-15 20:31 -03:00: - /home/liebe4735/applications/icaros/controllers/postController.js
+2024-11-15 20:31 -03:00: - /home/liebe4735/applications/icaros/routes/postRoutes.js
+2024-11-15 20:31 -03:00: - /home/liebe4735/applications/icaros/index.js
+2024-11-15 20:31 -03:00:     at Function._resolveFilename (node:internal/modules/cjs/loader:1246:15)
+2024-11-15 20:31 -03:00:     at Hook._require.Module.require (/home/liebe4735/bin/lib/node_modules/require-in-the-middle/index.js:61:29)
+2024-11-15 20:31 -03:00:     at require (node:internal/modules/helpers:139:16)
+2024-11-15 20:31 -03:00:     at Object.<anonymous> (/home/liebe4735/applications/icaros/controllers/postController.js:5:20)
+2024-11-15 20:31 -03:00:     at Module._compile (node:internal/modules/cjs/loader:1572:14)
+2024-11-15 20:31 -03:00:     at Object..js (node:internal/modules/cjs/loader:1709:10)
+2024-11-15 20:31 -03:00:     at Module.load (node:internal/modules/cjs/loader:1315:32)
+2024-11-15 20:31 -03:00:     at Function._load (node:internal/modules/cjs/loader:1125:12)
+2024-11-15 20:31 -03:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2024-11-15 20:31 -03:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:216:24) {
+2024-11-15 20:31 -03:00:   code: 'MODULE_NOT_FOUND',
+2024-11-15 20:31 -03:00:   requireStack: [
+2024-11-15 20:31 -03:00:     '/home/liebe4735/applications/icaros/controllers/postController.js',
+2024-11-15 20:31 -03:00:     '/home/liebe4735/applications/icaros/routes/postRoutes.js',
+2024-11-15 20:31 -03:00:     '/home/liebe4735/applications/icaros/index.js'
+2024-11-15 20:31 -03:00:   ]
+2024-11-15 20:31 -03:00: }
+2024-11-15 20:31 -03:00: Error: Cannot find module 'ffmpeg-static'
+2024-11-15 20:31 -03:00: Require stack:
+2024-11-15 20:31 -03:00: - /home/liebe4735/applications/icaros/controllers/postController.js
+2024-11-15 20:31 -03:00: - /home/liebe4735/applications/icaros/routes/postRoutes.js
+2024-11-15 20:31 -03:00: - /home/liebe4735/applications/icaros/index.js
+2024-11-15 20:31 -03:00:     at Function._resolveFilename (node:internal/modules/cjs/loader:1246:15)
+2024-11-15 20:31 -03:00:     at Hook._require.Module.require (/home/liebe4735/bin/lib/node_modules/require-in-the-middle/index.js:61:29)
+2024-11-15 20:31 -03:00:     at require (node:internal/modules/helpers:139:16)
+2024-11-15 20:31 -03:00:     at Object.<anonymous> (/home/liebe4735/applications/icaros/controllers/postController.js:5:20)
+2024-11-15 20:31 -03:00:     at Module._compile (node:internal/modules/cjs/loader:1572:14)
+2024-11-15 20:31 -03:00:     at Object..js (node:internal/modules/cjs/loader:1709:10)
+2024-11-15 20:31 -03:00:     at Module.load (node:internal/modules/cjs/loader:1315:32)
+2024-11-15 20:31 -03:00:     at Function._load (node:internal/modules/cjs/loader:1125:12)
+2024-11-15 20:31 -03:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2024-11-15 20:31 -03:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:216:24) {
+2024-11-15 20:31 -03:00:   code: 'MODULE_NOT_FOUND',
+2024-11-15 20:31 -03:00:   requireStack: [
+2024-11-15 20:31 -03:00:     '/home/liebe4735/applications/icaros/controllers/postController.js',
+2024-11-15 20:31 -03:00:     '/home/liebe4735/applications/icaros/routes/postRoutes.js',
+2024-11-15 20:31 -03:00:     '/home/liebe4735/applications/icaros/index.js'
+2024-11-15 20:31 -03:00:   ]
+2024-11-15 20:31 -03:00: }
+2024-11-15 20:31 -03:00: Error: Cannot find module 'ffmpeg-static'
+2024-11-15 20:31 -03:00: Require stack:
+2024-11-15 20:31 -03:00: - /home/liebe4735/applications/icaros/controllers/postController.js
+2024-11-15 20:31 -03:00: - /home/liebe4735/applications/icaros/routes/postRoutes.js
+2024-11-15 20:31 -03:00: - /home/liebe4735/applications/icaros/index.js
+2024-11-15 20:31 -03:00:     at Function._resolveFilename (node:internal/modules/cjs/loader:1246:15)
+2024-11-15 20:31 -03:00:     at Hook._require.Module.require (/home/liebe4735/bin/lib/node_modules/require-in-the-middle/index.js:61:29)
+2024-11-15 20:31 -03:00:     at require (node:internal/modules/helpers:139:16)
+2024-11-15 20:31 -03:00:     at Object.<anonymous> (/home/liebe4735/applications/icaros/controllers/postController.js:5:20)
+2024-11-15 20:31 -03:00:     at Module._compile (node:internal/modules/cjs/loader:1572:14)
+2024-11-15 20:31 -03:00:     at Object..js (node:internal/modules/cjs/loader:1709:10)
+2024-11-15 20:31 -03:00:     at Module.load (node:internal/modules/cjs/loader:1315:32)
+2024-11-15 20:31 -03:00:     at Function._load (node:internal/modules/cjs/loader:1125:12)
+2024-11-15 20:31 -03:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2024-11-15 20:31 -03:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:216:24) {
+2024-11-15 20:31 -03:00:   code: 'MODULE_NOT_FOUND',
+2024-11-15 20:31 -03:00:   requireStack: [
+2024-11-15 20:31 -03:00:     '/home/liebe4735/applications/icaros/controllers/postController.js',
+2024-11-15 20:31 -03:00:     '/home/liebe4735/applications/icaros/routes/postRoutes.js',
+2024-11-15 20:31 -03:00:     '/home/liebe4735/applications/icaros/index.js'
+2024-11-15 20:31 -03:00:   ]
+2024-11-15 20:31 -03:00: }
+2024-11-15 20:31 -03:00: Error: Cannot find module 'ffmpeg-static'
+2024-11-15 20:31 -03:00: Require stack:
+2024-11-15 20:31 -03:00: - /home/liebe4735/applications/icaros/controllers/postController.js
+2024-11-15 20:31 -03:00: - /home/liebe4735/applications/icaros/routes/postRoutes.js
+2024-11-15 20:31 -03:00: - /home/liebe4735/applications/icaros/index.js
+2024-11-15 20:31 -03:00:     at Function._resolveFilename (node:internal/modules/cjs/loader:1246:15)
+2024-11-15 20:31 -03:00:     at Hook._require.Module.require (/home/liebe4735/bin/lib/node_modules/require-in-the-middle/index.js:61:29)
+2024-11-15 20:31 -03:00:     at require (node:internal/modules/helpers:139:16)
+2024-11-15 20:31 -03:00:     at Object.<anonymous> (/home/liebe4735/applications/icaros/controllers/postController.js:5:20)
+2024-11-15 20:31 -03:00:     at Module._compile (node:internal/modules/cjs/loader:1572:14)
+2024-11-15 20:31 -03:00:     at Object..js (node:internal/modules/cjs/loader:1709:10)
+2024-11-15 20:31 -03:00:     at Module.load (node:internal/modules/cjs/loader:1315:32)
+2024-11-15 20:31 -03:00:     at Function._load (node:internal/modules/cjs/loader:1125:12)
+2024-11-15 20:31 -03:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2024-11-15 20:31 -03:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:216:24) {
+2024-11-15 20:31 -03:00:   code: 'MODULE_NOT_FOUND',
+2024-11-15 20:31 -03:00:   requireStack: [
+2024-11-15 20:31 -03:00:     '/home/liebe4735/applications/icaros/controllers/postController.js',
+2024-11-15 20:31 -03:00:     '/home/liebe4735/applications/icaros/routes/postRoutes.js',
+2024-11-15 20:31 -03:00:     '/home/liebe4735/applications/icaros/index.js'
+2024-11-15 20:31 -03:00:   ]
+2024-11-15 20:31 -03:00: }
+2024-11-15 20:31 -03:00: Error: Cannot find module 'ffmpeg-static'
+2024-11-15 20:31 -03:00: Require stack:
+2024-11-15 20:31 -03:00: - /home/liebe4735/applications/icaros/controllers/postController.js
+2024-11-15 20:31 -03:00: - /home/liebe4735/applications/icaros/routes/postRoutes.js
+2024-11-15 20:31 -03:00: - /home/liebe4735/applications/icaros/index.js
+2024-11-15 20:31 -03:00:     at Function._resolveFilename (node:internal/modules/cjs/loader:1246:15)
+2024-11-15 20:31 -03:00:     at Hook._require.Module.require (/home/liebe4735/bin/lib/node_modules/require-in-the-middle/index.js:61:29)
+2024-11-15 20:31 -03:00:     at require (node:internal/modules/helpers:139:16)
+2024-11-15 20:31 -03:00:     at Object.<anonymous> (/home/liebe4735/applications/icaros/controllers/postController.js:5:20)
+2024-11-15 20:31 -03:00:     at Module._compile (node:internal/modules/cjs/loader:1572:14)
+2024-11-15 20:31 -03:00:     at Object..js (node:internal/modules/cjs/loader:1709:10)
+2024-11-15 20:31 -03:00:     at Module.load (node:internal/modules/cjs/loader:1315:32)
+2024-11-15 20:31 -03:00:     at Function._load (node:internal/modules/cjs/loader:1125:12)
+2024-11-15 20:31 -03:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2024-11-15 20:31 -03:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:216:24) {
+2024-11-15 20:31 -03:00:   code: 'MODULE_NOT_FOUND',
+2024-11-15 20:31 -03:00:   requireStack: [
+2024-11-15 20:31 -03:00:     '/home/liebe4735/applications/icaros/controllers/postController.js',
+2024-11-15 20:31 -03:00:     '/home/liebe4735/applications/icaros/routes/postRoutes.js',
+2024-11-15 20:31 -03:00:     '/home/liebe4735/applications/icaros/index.js'
+2024-11-15 20:31 -03:00:   ]
+2024-11-15 20:31 -03:00: }
+2024-11-15 20:31 -03:00: Error: Cannot find module 'ffmpeg-static'
+2024-11-15 20:31 -03:00: Require stack:
+2024-11-15 20:31 -03:00: - /home/liebe4735/applications/icaros/controllers/postController.js
+2024-11-15 20:31 -03:00: - /home/liebe4735/applications/icaros/routes/postRoutes.js
+2024-11-15 20:31 -03:00: - /home/liebe4735/applications/icaros/index.js
+2024-11-15 20:31 -03:00:     at Function._resolveFilename (node:internal/modules/cjs/loader:1246:15)
+2024-11-15 20:31 -03:00:     at Hook._require.Module.require (/home/liebe4735/bin/lib/node_modules/require-in-the-middle/index.js:61:29)
+2024-11-15 20:31 -03:00:     at require (node:internal/modules/helpers:139:16)
+2024-11-15 20:31 -03:00:     at Object.<anonymous> (/home/liebe4735/applications/icaros/controllers/postController.js:5:20)
+2024-11-15 20:31 -03:00:     at Module._compile (node:internal/modules/cjs/loader:1572:14)
+2024-11-15 20:31 -03:00:     at Object..js (node:internal/modules/cjs/loader:1709:10)
+2024-11-15 20:31 -03:00:     at Module.load (node:internal/modules/cjs/loader:1315:32)
+2024-11-15 20:31 -03:00:     at Function._load (node:internal/modules/cjs/loader:1125:12)
+2024-11-15 20:31 -03:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2024-11-15 20:31 -03:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:216:24) {
+2024-11-15 20:31 -03:00:   code: 'MODULE_NOT_FOUND',
+2024-11-15 20:31 -03:00:   requireStack: [
+2024-11-15 20:31 -03:00:     '/home/liebe4735/applications/icaros/controllers/postController.js',
+2024-11-15 20:31 -03:00:     '/home/liebe4735/applications/icaros/routes/postRoutes.js',
+2024-11-15 20:31 -03:00:     '/home/liebe4735/applications/icaros/index.js'
+2024-11-15 20:31 -03:00:   ]
+2024-11-15 20:31 -03:00: }
+2024-11-15 20:34 -03:00: (node:1266243) [DEP0060] DeprecationWarning: The `util._extend` API is deprecated. Please use Object.assign() instead.
+2024-11-15 20:34 -03:00: (Use `node --trace-deprecation ...` to show where the warning was created)
+2024-11-15 20:34 -03:00: Servidor rodando
+2024-11-15 20:34 -03:00: Executing (default): SELECT 1+1 AS result
+2024-11-15 20:34 -03:00: Conexão estabelecida com sucesso.
+2024-11-15 20:34 -03:00: conectado com sucesso banco mongo db
+2024-11-15 20:35 -03:00: (node:1267056) [DEP0060] DeprecationWarning: The `util._extend` API is deprecated. Please use Object.assign() instead.
+2024-11-15 20:35 -03:00: (Use `node --trace-deprecation ...` to show where the warning was created)
+2024-11-15 20:35 -03:00: Servidor rodando
+2024-11-15 20:35 -03:00: Executing (default): SELECT 1+1 AS result
+2024-11-15 20:35 -03:00: Conexão estabelecida com sucesso.
+2024-11-15 20:35 -03:00: conectado com sucesso banco mongo db
+2024-11-15 20:51 -03:00: (node:1279031) [DEP0060] DeprecationWarning: The `util._extend` API is deprecated. Please use Object.assign() instead.
+2024-11-15 20:51 -03:00: (Use `node --trace-deprecation ...` to show where the warning was created)
+2024-11-15 20:51 -03:00: Servidor rodando
+2024-11-15 20:51 -03:00: Executing (default): SELECT 1+1 AS result
+2024-11-15 20:51 -03:00: Conexão estabelecida com sucesso.
+2024-11-15 20:51 -03:00: conectado com sucesso banco mongo db
+2024-11-15 21:51 -03:00: (node:1321451) [DEP0060] DeprecationWarning: The `util._extend` API is deprecated. Please use Object.assign() instead.
+2024-11-15 21:51 -03:00: (Use `node --trace-deprecation ...` to show where the warning was created)
+2024-11-15 21:51 -03:00: Servidor rodando
+2024-11-15 21:51 -03:00: Executing (default): SELECT 1+1 AS result
+2024-11-15 21:51 -03:00: Conexão estabelecida com sucesso.
+2024-11-15 21:51 -03:00: conectado com sucesso banco mongo db
+2024-11-15 22:21 -03:00: (node:1346703) [DEP0060] DeprecationWarning: The `util._extend` API is deprecated. Please use Object.assign() instead.
+2024-11-15 22:21 -03:00: (Use `node --trace-deprecation ...` to show where the warning was created)
+2024-11-15 22:21 -03:00: Servidor rodando
+2024-11-15 22:21 -03:00: Executing (default): SELECT 1+1 AS result
+2024-11-15 22:21 -03:00: Conexão estabelecida com sucesso.
+2024-11-15 22:21 -03:00: conectado com sucesso banco mongo db
+2024-11-15 22:23 -03:00: (node:1348041) [DEP0060] DeprecationWarning: The `util._extend` API is deprecated. Please use Object.assign() instead.
+2024-11-15 22:23 -03:00: (Use `node --trace-deprecation ...` to show where the warning was created)
+2024-11-15 22:23 -03:00: Servidor rodando
+2024-11-15 22:23 -03:00: Executing (default): SELECT 1+1 AS result
+2024-11-15 22:23 -03:00: Conexão estabelecida com sucesso.
+2024-11-15 22:23 -03:00: conectado com sucesso banco mongo db
+2024-11-15 22:28 -03:00: (node:1351550) [DEP0060] DeprecationWarning: The `util._extend` API is deprecated. Please use Object.assign() instead.
+2024-11-15 22:28 -03:00: (Use `node --trace-deprecation ...` to show where the warning was created)
+2024-11-15 22:28 -03:00: Servidor rodando
+2024-11-15 22:28 -03:00: Executing (default): SELECT 1+1 AS result
+2024-11-15 22:28 -03:00: Conexão estabelecida com sucesso.
+2024-11-15 22:28 -03:00: conectado com sucesso banco mongo db
+2024-11-15 22:34 -03:00: (node:1355751) [DEP0060] DeprecationWarning: The `util._extend` API is deprecated. Please use Object.assign() instead.
+2024-11-15 22:34 -03:00: (Use `node --trace-deprecation ...` to show where the warning was created)
+2024-11-15 22:34 -03:00: Servidor rodando
+2024-11-15 22:34 -03:00: Executing (default): SELECT 1+1 AS result
+2024-11-15 22:34 -03:00: Conexão estabelecida com sucesso.
+2024-11-15 22:34 -03:00: conectado com sucesso banco mongo db
+2024-11-15 22:39 -03:00: (node:1359014) [DEP0060] DeprecationWarning: The `util._extend` API is deprecated. Please use Object.assign() instead.
+2024-11-15 22:39 -03:00: (Use `node --trace-deprecation ...` to show where the warning was created)
+2024-11-15 22:39 -03:00: Servidor rodando
+2024-11-15 22:39 -03:00: Executing (default): SELECT 1+1 AS result
+2024-11-15 22:39 -03:00: Conexão estabelecida com sucesso.
+2024-11-15 22:39 -03:00: conectado com sucesso banco mongo db
+2024-11-15 22:44 -03:00: (node:1362348) [DEP0060] DeprecationWarning: The `util._extend` API is deprecated. Please use Object.assign() instead.
+2024-11-15 22:44 -03:00: (Use `node --trace-deprecation ...` to show where the warning was created)
+2024-11-15 22:44 -03:00: Servidor rodando
+2024-11-15 22:44 -03:00: Executing (default): SELECT 1+1 AS result
+2024-11-15 22:44 -03:00: Conexão estabelecida com sucesso.
+2024-11-15 22:44 -03:00: conectado com sucesso banco mongo db
+2024-11-15 23:00 -03:00: (node:1373808) [DEP0060] DeprecationWarning: The `util._extend` API is deprecated. Please use Object.assign() instead.
+2024-11-15 23:00 -03:00: (Use `node --trace-deprecation ...` to show where the warning was created)
+2024-11-15 23:00 -03:00: Servidor rodando
+2024-11-15 23:00 -03:00: Executing (default): SELECT 1+1 AS result
+2024-11-15 23:00 -03:00: Conexão estabelecida com sucesso.
+2024-11-15 23:00 -03:00: conectado com sucesso banco mongo db
+2024-11-15 23:07 -03:00: (node:1379257) [DEP0060] DeprecationWarning: The `util._extend` API is deprecated. Please use Object.assign() instead.
+2024-11-15 23:07 -03:00: (Use `node --trace-deprecation ...` to show where the warning was created)
+2024-11-15 23:07 -03:00: Servidor rodando
+2024-11-15 23:07 -03:00: Executing (default): SELECT 1+1 AS result
+2024-11-15 23:07 -03:00: Conexão estabelecida com sucesso.
+2024-11-15 23:07 -03:00: conectado com sucesso banco mongo db
+2024-11-15 23:12 -03:00: (node:1382832) [DEP0060] DeprecationWarning: The `util._extend` API is deprecated. Please use Object.assign() instead.
+2024-11-15 23:12 -03:00: (Use `node --trace-deprecation ...` to show where the warning was created)
+2024-11-15 23:12 -03:00: Servidor rodando
+2024-11-15 23:12 -03:00: Executing (default): SELECT 1+1 AS result
+2024-11-15 23:12 -03:00: Conexão estabelecida com sucesso.
+2024-11-15 23:12 -03:00: conectado com sucesso banco mongo db
+2024-11-15 23:15 -03:00: (node:1385275) [DEP0060] DeprecationWarning: The `util._extend` API is deprecated. Please use Object.assign() instead.
+2024-11-15 23:15 -03:00: (Use `node --trace-deprecation ...` to show where the warning was created)
+2024-11-15 23:15 -03:00: Servidor rodando
+2024-11-15 23:15 -03:00: Executing (default): SELECT 1+1 AS result
+2024-11-15 23:15 -03:00: Conexão estabelecida com sucesso.
+2024-11-15 23:15 -03:00: conectado com sucesso banco mongo db
+2024-11-15 23:20 -03:00: (node:1390323) [DEP0060] DeprecationWarning: The `util._extend` API is deprecated. Please use Object.assign() instead.
+2024-11-15 23:20 -03:00: (Use `node --trace-deprecation ...` to show where the warning was created)
+2024-11-15 23:20 -03:00: Servidor rodando
+2024-11-15 23:20 -03:00: Executing (default): SELECT 1+1 AS result
+2024-11-15 23:20 -03:00: Conexão estabelecida com sucesso.
+2024-11-15 23:20 -03:00: conectado com sucesso banco mongo db
+2024-11-16 00:15 -03:00: (node:1435254) [DEP0060] DeprecationWarning: The `util._extend` API is deprecated. Please use Object.assign() instead.
+2024-11-16 00:15 -03:00: (Use `node --trace-deprecation ...` to show where the warning was created)
+2024-11-16 00:15 -03:00: Servidor rodando
+2024-11-16 00:15 -03:00: Executing (default): SELECT 1+1 AS result
+2024-11-16 00:15 -03:00: Conexão estabelecida com sucesso.
+2024-11-16 00:15 -03:00: conectado com sucesso banco mongo db
+2024-11-16 00:19 -03:00: (node:1438303) [DEP0060] DeprecationWarning: The `util._extend` API is deprecated. Please use Object.assign() instead.
+2024-11-16 00:19 -03:00: (Use `node --trace-deprecation ...` to show where the warning was created)
+2024-11-16 00:19 -03:00: Servidor rodando
+2024-11-16 00:19 -03:00: Executing (default): SELECT 1+1 AS result
+2024-11-16 00:19 -03:00: Conexão estabelecida com sucesso.
+2024-11-16 00:19 -03:00: conectado com sucesso banco mongo db
+2024-11-16 00:20 -03:00: Executing (default): SELECT `ID_USUARIO`, `NOME`, `EMAIL`, `SENHA`, `sexo`, `flag_tipo_usuario`, `DATA_NASC`, `TELEFONE`, `IMAGE`, `GENERO_MUSICAL`, `confirmationToken`, `NovoUsuario` FROM `tb_usuario` AS `Usuario` WHERE `Usuario`.`EMAIL` = 'cristiano.silveira@fatec.sp.gov.br';
+2024-11-16 00:20 -03:00: Executing (default): SELECT `ID_USUARIO`, `NOME`, `EMAIL`, `SENHA`, `sexo`, `flag_tipo_usuario`, `DATA_NASC`, `TELEFONE`, `IMAGE`, `GENERO_MUSICAL`, `confirmationToken`, `NovoUsuario` FROM `tb_usuario` AS `Usuario` WHERE `Usuario`.`ID_USUARIO` = 2;
+2024-11-16 00:20 -03:00: Executing (default): SELECT `ID_USUARIO`, `NOME`, `EMAIL`, `SENHA`, `sexo`, `flag_tipo_usuario`, `DATA_NASC`, `TELEFONE`, `IMAGE`, `GENERO_MUSICAL`, `confirmationToken`, `NovoUsuario` FROM `tb_usuario` AS `Usuario` WHERE `Usuario`.`ID_USUARIO` = 2;
+2024-11-16 00:20 -03:00: Executing (default): SELECT `ID_MUSICO`, `CPF`, `ID_USUARIO`, `COMENTARIO` FROM `tb_usuario_musico` AS `UsuarioMusico` WHERE `UsuarioMusico`.`ID_USUARIO` = 2 LIMIT 1;
+2024-11-16 00:20 -03:00: Executing (default): SELECT `ID_USUARIO`, `NOME`, `EMAIL`, `SENHA`, `sexo`, `flag_tipo_usuario`, `DATA_NASC`, `TELEFONE`, `IMAGE`, `GENERO_MUSICAL`, `confirmationToken`, `NovoUsuario` FROM `tb_usuario` AS `Usuario` WHERE `Usuario`.`ID_USUARIO` = 2;
+2024-11-16 00:20 -03:00: Executing (default): UPDATE `tb_usuario` SET `NovoUsuario`=? WHERE `ID_USUARIO` = ?
+2024-11-16 00:20 -03:00: Executing (default): SELECT `ID_MUSICO`, `CPF`, `ID_USUARIO`, `COMENTARIO` FROM `tb_usuario_musico` AS `UsuarioMusico` WHERE `UsuarioMusico`.`ID_USUARIO` = 2 LIMIT 1;
+2024-11-16 00:20 -03:00: Executing (default): SELECT `ID_USUARIO`, `NOME`, `EMAIL`, `SENHA`, `sexo`, `flag_tipo_usuario`, `DATA_NASC`, `TELEFONE`, `IMAGE`, `GENERO_MUSICAL`, `confirmationToken`, `NovoUsuario` FROM `tb_usuario` AS `Usuario` WHERE `Usuario`.`ID_USUARIO` = 2;
+2024-11-16 00:20 -03:00: Access token renovado com sucesso!
+2024-11-16 00:20 -03:00: (node:1438303) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2024-11-16 00:20 -03:00: Access token renovado com sucesso!
+2024-11-16 00:20 -03:00: Arquivo enviado para o Dropbox: DropboxResponse {
+2024-11-16 00:20 -03:00:   status: 200,
+2024-11-16 00:20 -03:00:   headers: Headers {
+2024-11-16 00:20 -03:00:     [Symbol(map)]: [Object: null prototype] {
+2024-11-16 00:20 -03:00:       'content-type': [Array],
+2024-11-16 00:20 -03:00:       'cache-control': [Array],
+2024-11-16 00:20 -03:00:       'x-content-type-options': [Array],
+2024-11-16 00:20 -03:00:       'x-server-response-time': [Array],
+2024-11-16 00:20 -03:00:       date: [Array],
+2024-11-16 00:20 -03:00:       server: [Array],
+2024-11-16 00:20 -03:00:       'strict-transport-security': [Array],
+2024-11-16 00:20 -03:00:       'x-robots-tag': [Array],
+2024-11-16 00:20 -03:00:       'content-encoding': [Array],
+2024-11-16 00:20 -03:00:       vary: [Array],
+2024-11-16 00:20 -03:00:       'x-dropbox-response-origin': [Array],
+2024-11-16 00:20 -03:00:       'x-dropbox-request-id': [Array],
+2024-11-16 00:20 -03:00:       'transfer-encoding': [Array]
+2024-11-16 00:20 -03:00:     }
+2024-11-16 00:20 -03:00:   },
+2024-11-16 00:20 -03:00:   result: {
+2024-11-16 00:20 -03:00:     name: '1731727217752.png',
+2024-11-16 00:20 -03:00:     path_lower: '/uploads/1731727217752.png',
+2024-11-16 00:20 -03:00:     path_display: '/uploads/1731727217752.png',
+2024-11-16 00:20 -03:00:     id: 'id:dfV9xl5BZlgAAAAAAAAAPQ',
+2024-11-16 00:20 -03:00:     client_modified: '2024-11-16T03:20:20Z',
+2024-11-16 00:20 -03:00:     server_modified: '2024-11-16T03:20:20Z',
+2024-11-16 00:20 -03:00:     rev: '01626ff29d0e0a200000002c2a359d1',
+2024-11-16 00:20 -03:00:     size: 36452,
+2024-11-16 00:20 -03:00:     is_downloadable: true,
+2024-11-16 00:20 -03:00:     content_hash: 'bb055251fe2bc950a41108a0676bd046baca2113c49a9d0300b966075b99646d'
+2024-11-16 00:20 -03:00:   }
+2024-11-16 00:20 -03:00: }
+2024-11-16 00:20 -03:00: Executing (default): SELECT `ID_USUARIO`, `NOME`, `EMAIL`, `SENHA`, `sexo`, `flag_tipo_usuario`, `DATA_NASC`, `TELEFONE`, `IMAGE`, `GENERO_MUSICAL`, `confirmationToken`, `NovoUsuario` FROM `tb_usuario` AS `Usuario` WHERE `Usuario`.`ID_USUARIO` = 2;
+2024-11-16 00:20 -03:00: Executing (default): SELECT `ID_MUSICO`, `CPF`, `ID_USUARIO`, `COMENTARIO` FROM `tb_usuario_musico` AS `UsuarioMusico` WHERE `UsuarioMusico`.`ID_USUARIO` = 2 LIMIT 1;
+2024-11-16 00:20 -03:00: Access token renovado com sucesso!
+2024-11-16 00:22 -03:00: Executing (default): SELECT `ID_USUARIO`, `NOME`, `EMAIL`, `SENHA`, `sexo`, `flag_tipo_usuario`, `DATA_NASC`, `TELEFONE`, `IMAGE`, `GENERO_MUSICAL`, `confirmationToken`, `NovoUsuario` FROM `tb_usuario` AS `Usuario` WHERE `Usuario`.`EMAIL` = 'cristiano.silveira@fatec.sp.gov.br';
+2024-11-16 00:22 -03:00: Executing (default): SELECT `ID_USUARIO`, `NOME`, `EMAIL`, `SENHA`, `sexo`, `flag_tipo_usuario`, `DATA_NASC`, `TELEFONE`, `IMAGE`, `GENERO_MUSICAL`, `confirmationToken`, `NovoUsuario` FROM `tb_usuario` AS `Usuario` WHERE `Usuario`.`ID_USUARIO` = 2;
+2024-11-16 00:22 -03:00: Executing (default): SELECT `ID_USUARIO`, `NOME`, `EMAIL`, `SENHA`, `sexo`, `flag_tipo_usuario`, `DATA_NASC`, `TELEFONE`, `IMAGE`, `GENERO_MUSICAL`, `confirmationToken`, `NovoUsuario` FROM `tb_usuario` AS `Usuario` WHERE `Usuario`.`ID_USUARIO` = 2;
+2024-11-16 00:22 -03:00: Executing (default): SELECT `ID_MUSICO`, `CPF`, `ID_USUARIO`, `COMENTARIO` FROM `tb_usuario_musico` AS `UsuarioMusico` WHERE `UsuarioMusico`.`ID_USUARIO` = 2 LIMIT 1;
+2024-11-16 00:22 -03:00: Access token renovado com sucesso!
+2024-11-16 02:43 -03:00: SyntaxError: Expected property name or '}' in JSON at position 1 (line 1 column 2)
+2024-11-16 02:43 -03:00:     at JSON.parse (<anonymous>)
+2024-11-16 02:43 -03:00:     at parse (/home/liebe4735/nodevenv/icaros/lib/node_modules/body-parser/lib/types/json.js:92:19)
+2024-11-16 02:43 -03:00:     at /home/liebe4735/nodevenv/icaros/lib/node_modules/body-parser/lib/read.js:128:18
+2024-11-16 02:43 -03:00:     at AsyncResource.runInAsyncScope (node:async_hooks:211:14)
+2024-11-16 02:43 -03:00:     at invokeCallback (/home/liebe4735/nodevenv/icaros/lib/node_modules/raw-body/index.js:238:16)
+2024-11-16 02:43 -03:00:     at done (/home/liebe4735/nodevenv/icaros/lib/node_modules/raw-body/index.js:227:7)
+2024-11-16 02:43 -03:00:     at IncomingMessage.onEnd (/home/liebe4735/nodevenv/icaros/lib/node_modules/raw-body/index.js:287:7)
+2024-11-16 02:43 -03:00:     at IncomingMessage.emit (node:events:507:28)
+2024-11-16 02:43 -03:00:     at endReadableNT (node:internal/streams/readable:1696:12)
+2024-11-16 02:43 -03:00:     at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+2024-11-16 02:45 -03:00: SyntaxError: Expected ',' or '}' after property value in JSON at position 65 (line 1 column 66)
+2024-11-16 02:45 -03:00:     at JSON.parse (<anonymous>)
+2024-11-16 02:45 -03:00:     at parse (/home/liebe4735/nodevenv/icaros/lib/node_modules/body-parser/lib/types/json.js:92:19)
+2024-11-16 02:45 -03:00:     at /home/liebe4735/nodevenv/icaros/lib/node_modules/body-parser/lib/read.js:128:18
+2024-11-16 02:45 -03:00:     at AsyncResource.runInAsyncScope (node:async_hooks:211:14)
+2024-11-16 02:45 -03:00:     at invokeCallback (/home/liebe4735/nodevenv/icaros/lib/node_modules/raw-body/index.js:238:16)
+2024-11-16 02:45 -03:00:     at done (/home/liebe4735/nodevenv/icaros/lib/node_modules/raw-body/index.js:227:7)
+2024-11-16 02:45 -03:00:     at IncomingMessage.onEnd (/home/liebe4735/nodevenv/icaros/lib/node_modules/raw-body/index.js:287:7)
+2024-11-16 02:45 -03:00:     at IncomingMessage.emit (node:events:507:28)
+2024-11-16 02:45 -03:00:     at endReadableNT (node:internal/streams/readable:1696:12)
+2024-11-16 02:45 -03:00:     at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+2024-11-16 02:46 -03:00: SyntaxError: Expected property name or '}' in JSON at position 1 (line 1 column 2)
+2024-11-16 02:46 -03:00:     at JSON.parse (<anonymous>)
+2024-11-16 02:46 -03:00:     at parse (/home/liebe4735/nodevenv/icaros/lib/node_modules/body-parser/lib/types/json.js:92:19)
+2024-11-16 02:46 -03:00:     at /home/liebe4735/nodevenv/icaros/lib/node_modules/body-parser/lib/read.js:128:18
+2024-11-16 02:46 -03:00:     at AsyncResource.runInAsyncScope (node:async_hooks:211:14)
+2024-11-16 02:46 -03:00:     at invokeCallback (/home/liebe4735/nodevenv/icaros/lib/node_modules/raw-body/index.js:238:16)
+2024-11-16 02:46 -03:00:     at done (/home/liebe4735/nodevenv/icaros/lib/node_modules/raw-body/index.js:227:7)
+2024-11-16 02:46 -03:00:     at IncomingMessage.onEnd (/home/liebe4735/nodevenv/icaros/lib/node_modules/raw-body/index.js:287:7)
+2024-11-16 02:46 -03:00:     at IncomingMessage.emit (node:events:507:28)
+2024-11-16 02:46 -03:00:     at endReadableNT (node:internal/streams/readable:1696:12)
+2024-11-16 02:46 -03:00:     at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+2024-11-16 02:47 -03:00: SyntaxError: Unexpected token 't', "test_data" is not valid JSON
+2024-11-16 02:47 -03:00:     at JSON.parse (<anonymous>)
+2024-11-16 02:47 -03:00:     at createStrictSyntaxError (/home/liebe4735/nodevenv/icaros/lib/node_modules/body-parser/lib/types/json.js:169:10)
+2024-11-16 02:47 -03:00:     at parse (/home/liebe4735/nodevenv/icaros/lib/node_modules/body-parser/lib/types/json.js:86:15)
+2024-11-16 02:47 -03:00:     at /home/liebe4735/nodevenv/icaros/lib/node_modules/body-parser/lib/read.js:128:18
+2024-11-16 02:47 -03:00:     at AsyncResource.runInAsyncScope (node:async_hooks:211:14)
+2024-11-16 02:47 -03:00:     at invokeCallback (/home/liebe4735/nodevenv/icaros/lib/node_modules/raw-body/index.js:238:16)
+2024-11-16 02:47 -03:00:     at done (/home/liebe4735/nodevenv/icaros/lib/node_modules/raw-body/index.js:227:7)
+2024-11-16 02:47 -03:00:     at IncomingMessage.onEnd (/home/liebe4735/nodevenv/icaros/lib/node_modules/raw-body/index.js:287:7)
+2024-11-16 02:47 -03:00:     at IncomingMessage.emit (node:events:507:28)
+2024-11-16 02:47 -03:00:     at endReadableNT (node:internal/streams/readable:1696:12)
+2024-11-16 10:44 -03:00: (node:2052200) [DEP0060] DeprecationWarning: The `util._extend` API is deprecated. Please use Object.assign() instead.
+2024-11-16 10:44 -03:00: (Use `node --trace-deprecation ...` to show where the warning was created)
+2024-11-16 10:44 -03:00: Servidor rodando
+2024-11-16 10:44 -03:00: Executing (default): SELECT 1+1 AS result
+2024-11-16 10:44 -03:00: Conexão estabelecida com sucesso.
+2024-11-16 10:44 -03:00: conectado com sucesso banco mongo db
+2024-11-16 10:45 -03:00: Executing (default): SELECT `ID_USUARIO`, `NOME`, `EMAIL`, `SENHA`, `sexo`, `flag_tipo_usuario`, `DATA_NASC`, `TELEFONE`, `IMAGE`, `GENERO_MUSICAL`, `confirmationToken`, `NovoUsuario` FROM `tb_usuario` AS `Usuario` WHERE `Usuario`.`EMAIL` = 'vieraathiagoo@gmail.com';
+2024-11-16 10:45 -03:00: Executing (default): SELECT `ID_USUARIO`, `NOME`, `EMAIL`, `SENHA`, `sexo`, `flag_tipo_usuario`, `DATA_NASC`, `TELEFONE`, `IMAGE`, `GENERO_MUSICAL`, `confirmationToken`, `NovoUsuario` FROM `tb_usuario` AS `Usuario` WHERE `Usuario`.`EMAIL` = 'thiagoviieira0@gmail.com';
+2024-11-16 10:45 -03:00: Executing (default): INSERT INTO `tb_usuario` (`ID_USUARIO`,`NOME`,`EMAIL`,`SENHA`,`sexo`,`flag_tipo_usuario`,`DATA_NASC`,`TELEFONE`,`GENERO_MUSICAL`,`NovoUsuario`) VALUES (DEFAULT,?,?,?,?,?,?,?,?,?);
+2024-11-16 10:45 -03:00: Executing (default): UPDATE `tb_usuario` SET `confirmationToken`=? WHERE `ID_USUARIO` = ?
+2024-11-16 10:45 -03:00: Executing (default): INSERT INTO `tb_usuario_musico` (`ID_MUSICO`,`CPF`,`ID_USUARIO`) VALUES (DEFAULT,?,?);
+2024-11-16 10:45 -03:00: User Musician: { cpf: '454.171.538-42' }
+2024-11-16 10:45 -03:00: User Lover: undefined
+2024-11-16 10:45 -03:00: Producer User: undefined
+2024-11-16 10:45 -03:00: sendEmail: [AsyncFunction: sendEmail]
+2024-11-16 10:45 -03:00: esse é o email que ta na rota:  thiagoviieira0@gmail.com
+2024-11-16 10:45 -03:00: Email enviado: 250 2.0.0 OK  1731764743 6a1803df08f44-6d40dd1fed8sm8914026d6.74 - gsmtp
+2024-11-16 10:50 -03:00: Executing (default): SELECT `ID_USUARIO`, `NOME`, `EMAIL`, `SENHA`, `sexo`, `flag_tipo_usuario`, `DATA_NASC`, `TELEFONE`, `IMAGE`, `GENERO_MUSICAL`, `confirmationToken`, `NovoUsuario` FROM `tb_usuario` AS `Usuario` WHERE `Usuario`.`confirmationToken` = 'cf3104a5d3e6925ca55f4f07478b779856303a56' LIMIT 1;
+2024-11-16 10:50 -03:00: Executing (default): UPDATE `tb_usuario` SET `confirmationToken`=? WHERE `ID_USUARIO` = ?
+2024-11-16 10:50 -03:00: Executing (default): SELECT `ID_USUARIO`, `NOME`, `EMAIL`, `SENHA`, `sexo`, `flag_tipo_usuario`, `DATA_NASC`, `TELEFONE`, `IMAGE`, `GENERO_MUSICAL`, `confirmationToken`, `NovoUsuario` FROM `tb_usuario` AS `Usuario` WHERE `Usuario`.`ID_USUARIO` = 3;
+2024-11-16 10:50 -03:00: Executing (default): SELECT `ID_USUARIO`, `NOME`, `EMAIL`, `SENHA`, `sexo`, `flag_tipo_usuario`, `DATA_NASC`, `TELEFONE`, `IMAGE`, `GENERO_MUSICAL`, `confirmationToken`, `NovoUsuario` FROM `tb_usuario` AS `Usuario` WHERE `Usuario`.`ID_USUARIO` = 3;
+2024-11-16 10:50 -03:00: Executing (default): SELECT `ID_MUSICO`, `CPF`, `ID_USUARIO`, `COMENTARIO` FROM `tb_usuario_musico` AS `UsuarioMusico` WHERE `UsuarioMusico`.`ID_USUARIO` = 3 LIMIT 1;
+2024-11-16 10:52 -03:00: Executing (default): SELECT `ID_USUARIO`, `NOME`, `EMAIL`, `SENHA`, `sexo`, `flag_tipo_usuario`, `DATA_NASC`, `TELEFONE`, `IMAGE`, `GENERO_MUSICAL`, `confirmationToken`, `NovoUsuario` FROM `tb_usuario` AS `Usuario` WHERE `Usuario`.`ID_USUARIO` = 3;
+2024-11-16 10:52 -03:00: Executing (default): UPDATE `tb_usuario` SET `NovoUsuario`=? WHERE `ID_USUARIO` = ?
+2024-11-16 10:52 -03:00: Executing (default): SELECT `ID_MUSICO`, `CPF`, `ID_USUARIO`, `COMENTARIO` FROM `tb_usuario_musico` AS `UsuarioMusico` WHERE `UsuarioMusico`.`ID_USUARIO` = 3 LIMIT 1;
+2024-11-16 10:52 -03:00: Executing (default): UPDATE `tb_usuario_musico` SET `COMENTARIO`=? WHERE `ID_MUSICO` = ?
+2024-11-16 10:52 -03:00: Executing (default): SELECT `ID_USUARIO`, `NOME`, `EMAIL`, `SENHA`, `sexo`, `flag_tipo_usuario`, `DATA_NASC`, `TELEFONE`, `IMAGE`, `GENERO_MUSICAL`, `confirmationToken`, `NovoUsuario` FROM `tb_usuario` AS `Usuario` WHERE `Usuario`.`ID_USUARIO` = 3;
+2024-11-16 10:52 -03:00: Access token renovado com sucesso!
+2024-11-16 10:52 -03:00: (node:2052200) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2024-11-16 10:52 -03:00: Arquivo enviado para o Dropbox: DropboxResponse {
+2024-11-16 10:52 -03:00:   status: 200,
+2024-11-16 10:52 -03:00:   headers: Headers {
+2024-11-16 10:52 -03:00:     [Symbol(map)]: [Object: null prototype] {
+2024-11-16 10:52 -03:00:       'content-type': [Array],
+2024-11-16 10:52 -03:00:       'cache-control': [Array],
+2024-11-16 10:52 -03:00:       'x-content-type-options': [Array],
+2024-11-16 10:52 -03:00:       'x-server-response-time': [Array],
+2024-11-16 10:52 -03:00:       date: [Array],
+2024-11-16 10:52 -03:00:       server: [Array],
+2024-11-16 10:52 -03:00:       'strict-transport-security': [Array],
+2024-11-16 10:52 -03:00:       'x-robots-tag': [Array],
+2024-11-16 10:52 -03:00:       'content-encoding': [Array],
+2024-11-16 10:52 -03:00:       vary: [Array],
+2024-11-16 10:52 -03:00:       'x-dropbox-response-origin': [Array],
+2024-11-16 10:52 -03:00:       'x-dropbox-request-id': [Array],
+2024-11-16 10:52 -03:00:       'transfer-encoding': [Array]
+2024-11-16 10:52 -03:00:     }
+2024-11-16 10:52 -03:00:   },
+2024-11-16 10:52 -03:00:   result: {
+2024-11-16 10:52 -03:00:     name: '1731765139552.jfif',
+2024-11-16 10:52 -03:00:     path_lower: '/uploads/1731765139552.jfif',
+2024-11-16 10:52 -03:00:     path_display: '/uploads/1731765139552.jfif',
+2024-11-16 10:52 -03:00:     id: 'id:dfV9xl5BZlgAAAAAAAAAPg',
+2024-11-16 10:52 -03:00:     client_modified: '2024-11-16T13:52:21Z',
+2024-11-16 10:52 -03:00:     server_modified: '2024-11-16T13:52:21Z',
+2024-11-16 10:52 -03:00:     rev: '0162707fe1afbe800000002c2a359d1',
+2024-11-16 10:52 -03:00:     size: 90570,
+2024-11-16 10:52 -03:00:     is_downloadable: true,
+2024-11-16 10:52 -03:00:     content_hash: 'f063ba9f1c0269674be39c7565f17f9fa9b29526a96ec8406addfe5b257c8d2a'
+2024-11-16 10:52 -03:00:   }
+2024-11-16 10:52 -03:00: }
+2024-11-16 10:52 -03:00: Executing (default): UPDATE `tb_usuario` SET `IMAGE`=? WHERE `ID_USUARIO` = ?
+2024-11-16 10:52 -03:00: Executing (default): SELECT `ID_USUARIO`, `NOME`, `EMAIL`, `SENHA`, `sexo`, `flag_tipo_usuario`, `DATA_NASC`, `TELEFONE`, `IMAGE`, `GENERO_MUSICAL`, `confirmationToken`, `NovoUsuario` FROM `tb_usuario` AS `Usuario` WHERE `Usuario`.`ID_USUARIO` = 3;
+2024-11-16 10:52 -03:00: Executing (default): SELECT `ID_MUSICO`, `CPF`, `ID_USUARIO`, `COMENTARIO` FROM `tb_usuario_musico` AS `UsuarioMusico` WHERE `UsuarioMusico`.`ID_USUARIO` = 3 LIMIT 1;
+2024-11-16 10:52 -03:00: Access token renovado com sucesso!

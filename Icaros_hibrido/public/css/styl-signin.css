@@ -1,0 +1,368 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap);
+ 
+body{
+    margin: 0px;
+    font-family: 'roboto', sans-serif;
+}
+body * {
+    box-sizing: border-box;
+}
+h1{
+    color: #f0f0f0;
+    text-align: center;
+}
+img{
+    width: 20vw;
+    height: 30vh;
+    cursor: pointer;
+}
+form{
+    width: 60%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2% 0px;
+    background: #1f1f1f;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px;
+}
+h2{
+    color: #ecd182;
+    font-weight: 800;
+    margin: 0;
+}
+input{
+    width: 15vw;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #2f2f2f;
+    color: #f0f0f0;
+    font-size: 10pt;
+    box-shadow: 0px 10px 40px #1f1f1f;
+    outline: none;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+option{
+    background-color: #2f2f2f;
+    color: #f0f0f0;
+}
+select{
+    outline: none;
+    align-self: center;
+    height: 100%;
+    width: 5vw;
+    color: #f0f0f0;
+    background-color: #2f2f2f;
+    border-radius: 5px;
+    text-align: center;
+}
+label{
+    color: #ecd182;
+    font-weight: 700;
+    margin-top: 10px
+}
+p {
+    font-weight: 700;
+    color: #f9f9f9;
+}
+.signin{
+    width: 100vw;
+    height: 100vh;
+    background: #0f0f0f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left-signin{
+    width: 35vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.right-signin{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.dropdown-signin{
+    margin-top: 0px;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.sexo-gender{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: row;
+    display: flex;
+}
+.select-sexo{
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+    margin-right: 50px;
+}
+.select-genero{
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+}
+.dropdown-gender{
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.select-sou{
+    margin-bottom: 3%;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+}
+.select-sou select{
+    width: 7vw;
+}
+.Field{
+    display: flex;
+    flex-direction: column;
+}
+#cnpj, #cpf{
+    text-align: center;
+}
+.Field input{
+    margin-top: 1%;
+}
+.right-signin button{
+    height: 5vh;
+    width: 7vw;
+    margin-top: 5%;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 0px;
+    color:#0f0f0f;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #000;
+}
+.right-signin button[type="submit"]:hover {
+    background-color: #ecd182;
+    box-shadow: #f0f0f0;
+    color: #0f0f0f;
+    box-shadow: 0px 0px 25px -12px #fff;
+}
+.input-error{
+    border: 2px solid red;
+    background-color: #ffcccc;
+}
+.error-message{
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+.hiperlink{
+    text-align: center;
+    font-size: 12pt;
+    color: #7f7f7f;
+}
+ 
+@media screen and (max-width: 1366px){
+    @import url(https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap);
+ 
+    body * {
+        box-sizing: border-box;
+    }
+    body{
+        margin: 0px;
+        font-family: 'roboto', sans-serif;
+        overflow: auto;
+    }
+    h1{
+        color: #f0f0f0;
+        font-size: 15pt;
+        text-align: center;
+    }
+    img{
+        width: 15vw;
+        height: 25vh;
+        cursor: pointer;
+    }
+    p {
+        font-weight: 700;
+        color: #f9f9f9;
+    }
+    .signin{
+        gap: 15%;
+        overflow: auto;
+        background: #0f0f0f;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .left-signin{
+        width: 25vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .right-signin{
+        width: 25vw;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .right-signin form{
+        height: auto;
+        width: 20vw;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 3% 0px;
+        background: #1f1f1f;
+        border-radius: 20px;
+        box-shadow: 0px 10px 40px;
+    }
+    .right-signin h2{
+        color: #ecd182;
+        font-weight: 800;
+        font-size: 15pt;
+        margin: 0;
+    }
+    .right-signin label{
+        color: #ecd182;
+        font-size: 10pt;
+        font-weight: 700;
+        margin-top: 3%;
+    }
+    .right-signin input[type="text"],
+    input[type="email"],input[type="password"],
+    input[type="date"],input[type="tel"]{
+        height: 0.1vh;
+        width: 12vw;
+        border: none;
+        border-radius: 10px;
+        background: #2f2f2f;
+        color: #f0f0f0;
+        font-size: 10pt;
+        box-shadow: 0px 10px 40px #1f1f1f;
+        outline: none;
+        box-sizing: content-box;
+        margin-top: 4%;
+    }
+    .right-signin button{
+        height: 5vh;
+        width: 7vw;
+        border: none;
+        border-radius: 8px;
+        outline: none;
+        text-transform: uppercase;
+        font-weight: 800;
+        letter-spacing: 0px;
+        color:#0f0f0f;
+        background-color: #f0f0f0;
+        cursor: pointer;
+        box-shadow: 0px 10px 40px -12px #000;
+    }
+    .right-signin button[type="submit"]:hover {
+        background-color: #ecd182;
+        box-shadow: #f0f0f0;
+        color: #0f0f0f;
+        box-shadow: 0px 0px 25px -12px #fff;
+    }
+    option{
+        background-color: #2f2f2f;
+        color: #f0f0f0;
+    }
+    .right-signin select{
+        font-size: 9pt;
+        outline: none;
+        align-self: center;
+        height: 3vh;
+        width: 5vw;
+        color: #f0f0f0;
+        background-color: #2f2f2f;
+        border-radius: 5px;
+        text-align: center;
+    }
+    .dropdown-signin{
+        margin-top: 0px;
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .sexo-gender{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: row;
+        display: flex;
+    }
+    .select-sexo{
+        text-align: center;
+        flex-direction: column;
+        display: flex;
+        margin-right: 50px;
+    }
+    .select-genero{
+        text-align: center;
+        flex-direction: column;
+        display: flex;
+    }
+    .dropdown-gender{
+        margin-top: 0px;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .select-sou{
+        margin-bottom: 3%;
+        text-align: center;
+        justify-content: center;
+        flex-direction: column;
+        display: flex;
+    }
+    .select-sou select{
+        width: 7vw;
+    }
+    .Field{
+        display: flex;
+        flex-direction: column;
+        font-size: 12pt;
+        margin: 0;
+    }
+    #cnpj, #cpf{
+        text-align: center;
+        margin-top: 0%
+    }
+    .hiperlink{
+        text-align: center;
+        font-size: 12pt;
+        color: #7f7f7f;
+    }
+}
+
+

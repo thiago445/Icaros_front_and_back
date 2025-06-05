@@ -1,0 +1,27 @@
+.sidebar{
+    color: #f0f0f0;
+    background-color: #1f1f1f; /* Cor de fundo */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky; /* Mantém os containers laterais fixos ao rolar */
+    top: 20px; /* Distância do topo da página */
+    height: fit-content; /* Altura ajusta-se ao conteúdo */
+  }
+  
+  .sidebar ul{
+    list-style-type: none; /* Remove os marcadores padrão */
+    padding: 0; /* Remove o preenchimento padrão */
+  }
+  
+  .sidebar li{
+    padding: 10px; /* Espaçamento interno para cada item */
+    transition: background-color 0.3s ease; /* Suaviza a transição */
+  }
+  
+  .sidebar li:hover{
+    color: #ECD182;
+    background-color: #3f3f3f; /* Cor de fundo ao passar o mouse */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+  }
+  

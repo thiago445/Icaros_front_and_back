@@ -1,0 +1,40 @@
+.create-post {  
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0; /* Margem superior e inferior */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; /* Organiza os elementos em coluna */
+    align-items: stretch; /* Faz com que os filhos ocupem toda a largura */
+}
+
+.create-post textarea {
+    width: 100%; /* A largura ocupa todo o espaço disponível */
+    border: 1px solid #ccc; /* Borda padrão */
+    border-radius: 4px;
+    padding: 10px;
+    resize: none; /* Impede o redimensionamento do textarea */
+    margin-bottom: 10px; /* Margem inferior para espaçamento com o botão */
+    transition: border-color 0.3s ease; /* Suaviza a transição da cor da borda */
+    box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
+}
+
+.post-actions {
+    display: flex;
+    justify-content: flex-end; /* Alinha o botão à direita */
+    width: 100%; /* Garante que o botão ocupe toda a largura */
+}
+
+.post-actions button {
+    background-color: #0077b5; /* Cor do botão */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.post-actions button:hover {
+    background-color: #005582; /* Cor ao passar o mouse */
+}

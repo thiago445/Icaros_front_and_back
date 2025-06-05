@@ -1,0 +1,86 @@
+<link rel="stylesheet" href="/css/styl-signin.css" type="text/css">
+<title>Cadastro de Usuário</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+<script src="/script/signin.js"></script>
+
+<div class="tudo">
+    <div class="signin">
+        <div class="left-signin">
+            <a href="/"><img src="/image/Icaros-branco.png" class="left-login-image"></a>
+            <h1>Desperte e voe até o Sol,<br>
+                venha fazer parte.</h1>
+        </div>
+        <div class="right-signin" id="signin">
+            <form id="CadastroForm" action="" class="signin-form">
+                <h2>CADASTRO</h2>
+                <input type="text" id="name" name="name" placeholder="Nome Completo" required title="Digite seu Nome">
+                <input type="email" id="email" name="email" placeholder="Email" required title="Digite seu Email">
+                <input type="password" id="password" name="psw" placeholder="Password" required title="Escolha uma senha">
+                <input type="password" id="csenha" name="cpsw" placeholder="Confirm password" required title="Confirme sua Senha">
+                <input type="date" id="birthDate" name="brthdt" required placeholder="Data de nascimento" title="Digite sua data de nascimento">
+                <input type="tel" id="cel" name="pnum" placeholder="Phone number" required title="Digite seu Telefone (DDD-Número)">
+                <div class="dropdown-signin">
+                    <div class="sexo-gender">
+                        <div class="select-sexo">
+                            <label for="sexo">Sexo</label>
+                            <select id="gender" name="gender" required>
+                                <option value="">Selecione...</option>
+                                <option value="M">Masculino</option>
+                                <option value="F">Feminino</option>
+                            </select>
+                        </div>
+                        <div class="dropdown-gender">
+                            <div id="generoField" class="select-genero">
+                                <label for="generoMusical">Estilo</label>
+                                <select id="generoMusical" name="generoMusical" required>
+                                    <option value="">Selecione...</option>
+                                    <option value="Rock">Rock</option>
+                                    <option value="Sertanejo">Sertanejo</option>
+                                    <option value="Pop">Pop</option>
+                                    <option value="Hip_Hop">Hip Hop</option>
+                                    <option value="Jazz">Jazz</option>
+                                    <option value="Blues">Blues</option>
+                                    <option value="Classical">Classical</option>
+                                    <option value="Electronic_Dance_Music">Electronic Dance Music</option>
+                                    <option value="Country">Country</option>
+                                    <option value="Reggae">Reggae</option>
+                                    <option value="Funk">Funk</option>
+                                    <option value="Disco">Disco</option>
+                                    <option value="Gospel">Gospel</option>
+                                    <option value="Todos">Todos</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="select-sou">
+                    <label for="sou">Sou</label>
+                    <select id="flagUserType" name="flagTipoUsuario" required>
+                        <option value="">Selecione...</option>
+                        <option value=1>Músico</option>
+                        <option value=3>Produtor Musical</option>
+                        <option value=2>Amante da Música</option>
+                    </select>
+                </div>
+                <div id="cpfField" style="display: none;" class="Field">
+                    <label for="cpf">CPF:</label>
+                    <div>
+                        <input type="text" id="cpf" name="cpf" placeholder="Digite seu CPF" title="Digite seu CPF">
+                    </div>
+                </div>
+                <div id="cnpjField" style="display: none;" class="Field">
+                    <label for="cnpj">CNPJ:</label>
+                    <div>
+                        <p id="resultado"></p>
+                        <input type="text" id="cnpj" name="cnpj" placeholder="Digite seu CNPJ" title="Digite seu CNPJ">
+                    </div>
+                </div>
+                <button type="submit" value="Confirm">Enviar</button>
+            </form>
+            <p>
+                Já possui cadastro? <a class="hiperlink" href="/login">Clique aqui.</a>
+            </p>
+        </div>
+    </div>
+</div>
