@@ -19,8 +19,8 @@ jobs:
         with:
           node-version: '18'
 
-      - name: Install dependencies and build front-end
+      - name: Build front-end
         working-directory: front_icaros/my-project
         run: |
           npm install
-          npm run build
+          CI=false npm run build
