@@ -12,45 +12,79 @@ jobs:
     defaults:
       run:
         shell: bash
-    
+    strategy:
+      matrix:
+        node-version: [20.x]
+
     steps:
       - uses: actions/checkout@v4
         with:
-          path: 'Icaros_hibrido'  # ← Garante a estrutura correta
+          fetch-depth: 0  # Garante que todos os arquivos sejam baixados
 
-      - name: Verify directory structure
+      # Debug: Lista a estrutura de arquivos
+      - name: Debug - Show directory structure
         run: |
-          echo "Estrutura completa:"
-          ls -R
-          echo "Verificando frontend:"
-          ls -la Icaros_hibrido/front_icaros/my-project/package-lock.json
-          echo "Verificando backend:"
-          ls -la Icaros_hibrido/Icaros_hibrido/package-lock.json
+          echo "Estrutura do projeto:"
+          tree -L 3 -a
+          echo "Conteúdo de front_icaros/my-project:"
+          ls -la front_icaros/my-project
+          echo "Conteúdo de icaros_hibrido:"
+          ls -la icaros_hibrido
 
-      - name: Use Node.js
+      - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v4
         with:
-          node-version: 20.x
+          node-version: ${{ matrix.node-version }}
           cache: 'npm'
           cache-dependency-path: |
-            Icaros_hibrido/front_icaros/my-project/package-lock.json
-            Icaros_hibrido/Icaros_hibrido/package-lock.json
+            front_icaros/my-project/package-lock.json
+            icaros_hibrido/package-lock.json
 
       # Frontend
       - name: Install frontend dependencies
-        working-directory: Icaros_hibrido/front_icaros/my-project
-        run: npm ci
+        working-directory: front_icaros/my-project
+        run: |
+          npm ci --no-audit
+          echo "Frontend node_modules size:"
+          du -sh node_modules
 
       - name: Run frontend lint
-        working-directory: Icaros_hibrido/front_icaros/my-project
+        working-directory: front_icaros/my-project
         run: npm run lint
+
+      - name: Run frontend format check
+        working-directory: front_icaros/my-project
+        run: npm run check-format
+
+      - name: Run frontend tests
+        working-directory: front_icaros/my-project
+        run: npm test -- --watchAll=false --ci
 
       # Backend
       - name: Install backend dependencies
-        working-directory: Icaros_hibrido/Icaros_hibrido  # ← Caminho corrigido
-        run: npm ci
+        working-directory: icaros_hibrido
+        run: |
+          npm ci --no-audit
+          echo "Backend node_modules size:"
+          du -sh node_modules
 
       - name: Run backend lint
-        working-directory: Icaros_hibrido/Icaros_hibrido
-        run: npm run lintgit commit --allow-empty -m "Test CI paths"
-git push
+        working-directory: icaros_hibrido
+        run: npm run lint
+
+      - name: Run backend format check
+        working-directory: icaros_hibrido
+        run: npm run check-format
+
+      - name: Run backend tests
+        working-directory: icaros_hibrido
+        run: npm test -- --ci
+
+      # Notificação opcional (descomente se quiser)
+      # - name: Notify Slack on success
+      #   if: success()
+      #   uses: act10ns/slack@v1
+      #   with:
+      #     job-status: ${{ job.status }}
+      #   env:
+      #     SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
