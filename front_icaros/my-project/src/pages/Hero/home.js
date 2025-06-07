@@ -1,5 +1,5 @@
-import { FaGuitar, FaMicrophone, FaHeadphones, FaMusic } from "react-icons/fa";
-import { useNavigate } from "react-router-dom";
+import { FaGuitar, FaMicrophone, FaHeadphones, FaMusic } from 'react-icons/fa';
+import { useNavigate } from 'react-router-dom';
 
 export default function Home() {
   const navigate = useNavigate();
@@ -18,13 +18,15 @@ export default function Home() {
           Connect with <br /> musicians
         </h1>
         <p className="text-lg mb-6">A social network for sharing your music</p>
-        <button className="bg-orange-500 text-white px-6 py-3 rounded-lg text-lg hover:bg-orange-600 transition" onClick={() => navigate('/Cadastro')}>
+        <button
+          className="bg-orange-500 text-white px-6 py-3 rounded-lg text-lg hover:bg-orange-600 transition"
+          onClick={() => navigate('/Cadastro')}
+        >
           Sign Up
-          
         </button>
         <p className="mt-4 text-sm">
-          Already have an account? 
-          <span 
+          Already have an account?
+          <span
             className="underline cursor-pointer"
             onClick={() => navigate('/login')}
           >

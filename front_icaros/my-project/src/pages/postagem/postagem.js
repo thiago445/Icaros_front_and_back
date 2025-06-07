@@ -9,7 +9,7 @@ const CreatePost = () => {
     title: '',
     description: '',
     video: null,
-    image: null
+    image: null,
   });
   const [error, setError] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -18,12 +18,12 @@ const CreatePost = () => {
     if (e.target.name === 'video' || e.target.name === 'image') {
       setFormData({
         ...formData,
-        [e.target.name]: e.target.files[0]
+        [e.target.name]: e.target.files[0],
       });
     } else {
       setFormData({
         ...formData,
-        [e.target.name]: e.target.value
+        [e.target.name]: e.target.value,
       });
     }
   };
@@ -31,7 +31,7 @@ const CreatePost = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
+
     if (!formData.video && !formData.image) {
       setError('Por favor, envie pelo menos um vídeo ou uma imagem.');
       setIsSubmitting(false);
@@ -49,20 +49,22 @@ const CreatePost = () => {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
-        withCredentials: true  // <-- Aqui é o correto!
+        withCredentials: true, // <-- Aqui é o correto!
       });
-      
+
       setFormData({
         title: '',
         description: '',
         video: null,
-        image: null
+        image: null,
       });
       setError('');
       alert('Postagem criada com sucesso!');
       navigate('/Feed');
     } catch (err) {
-      setError('Ocorreu um erro ao criar a postagem. Por favor, tente novamente.');
+      setError(
+        'Ocorreu um erro ao criar a postagem. Por favor, tente novamente.'
+      );
       console.error(err);
     } finally {
       setIsSubmitting(false);
@@ -73,13 +75,12 @@ const CreatePost = () => {
     <div className="min-h-screen bg-black text-white">
       {/* Cabeçalho */}
       <header className="sticky top-0 z-10 bg-black bg-opacity-90 backdrop-blur-sm border-b border-gray-800 p-4 flex items-center">
-        <button 
-          onClick={() => navigate(-1)}
-          className="mr-4 text-[#ECD182]"
-        >
+        <button onClick={() => navigate(-1)} className="mr-4 text-[#ECD182]">
           <FiArrowLeft size={24} />
         </button>
-        <h1 className="text-xl font-bold text-[#ECD182]">Criar Nova Postagem</h1>
+        <h1 className="text-xl font-bold text-[#ECD182]">
+          Criar Nova Postagem
+        </h1>
       </header>
 
       {/* Formulário */}
@@ -89,10 +90,13 @@ const CreatePost = () => {
             {error}
           </div>
         )}
-        
+
         <form onSubmit={handleSubmit} className="space-y-6">
           <div>
-            <label htmlFor="title" className="block text-sm font-medium text-[#ECD182] mb-2">
+            <label
+              htmlFor="title"
+              className="block text-sm font-medium text-[#ECD182] mb-2"
+            >
               Título
             </label>
             <input
@@ -106,9 +110,12 @@ const CreatePost = () => {
               placeholder="Dê um título à sua postagem"
             />
           </div>
-          
+
           <div>
-            <label htmlFor="description" className="block text-sm font-medium text-[#ECD182] mb-2">
+            <label
+              htmlFor="description"
+              className="block text-sm font-medium text-[#ECD182] mb-2"
+            >
               Descrição
             </label>
             <textarea
@@ -121,10 +128,13 @@ const CreatePost = () => {
               placeholder="Escreva algo sobre sua postagem..."
             ></textarea>
           </div>
-          
+
           <div className="space-y-4">
             <div>
-              <label htmlFor="video" className="block text-sm font-medium text-[#ECD182] mb-2">
+              <label
+                htmlFor="video"
+                className="block text-sm font-medium text-[#ECD182] mb-2"
+              >
                 Vídeo (opcional)
               </label>
               <div className="relative">
@@ -138,15 +148,20 @@ const CreatePost = () => {
                 />
                 <div className="px-4 py-3 bg-gray-900 border border-gray-800 rounded-lg flex items-center justify-between">
                   <span className="text-gray-300">
-                    {formData.video ? formData.video.name : 'Selecione um vídeo'}
+                    {formData.video
+                      ? formData.video.name
+                      : 'Selecione um vídeo'}
                   </span>
                   <span className="text-[#ECD182]">Procurar</span>
                 </div>
               </div>
             </div>
-            
+
             <div>
-              <label htmlFor="image" className="block text-sm font-medium text-[#ECD182] mb-2">
+              <label
+                htmlFor="image"
+                className="block text-sm font-medium text-[#ECD182] mb-2"
+              >
                 Imagem (opcional)
               </label>
               <div className="relative">
@@ -160,14 +175,16 @@ const CreatePost = () => {
                 />
                 <div className="px-4 py-3 bg-gray-900 border border-gray-800 rounded-lg flex items-center justify-between">
                   <span className="text-gray-300">
-                    {formData.image ? formData.image.name : 'Selecione uma imagem'}
+                    {formData.image
+                      ? formData.image.name
+                      : 'Selecione uma imagem'}
                   </span>
                   <span className="text-[#ECD182]">Procurar</span>
                 </div>
               </div>
             </div>
           </div>
-          
+
           <div className="flex space-x-4">
             <button
               type="button"

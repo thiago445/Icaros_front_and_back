@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { FiArrowLeft } from 'react-icons/fi';
 
-
 /**
  * Página de atualização das informações do perfil
  * Segue o mesmo visual do componente PerfilMusico
@@ -11,12 +10,12 @@ const EditProfile = () => {
   const navigate = useNavigate();
 
   const [formData, setFormData] = useState({
-    name: "",
-    musicalGenre: "",
-    comment: "",
+    name: '',
+    musicalGenre: '',
+    comment: '',
   });
   const [imageFile, setImageFile] = useState(null);
-  const [imagePreview, setImagePreview] = useState("");
+  const [imagePreview, setImagePreview] = useState('');
   const [hasImage, setHasImage] = useState(false);
   const [loading, setLoading] = useState(false);
   const [errors, setErrors] = useState([]);
@@ -26,31 +25,36 @@ const EditProfile = () => {
     const fetchUserProfile = async () => {
       try {
         const res = await fetch(`http://localhost:8081/profile/info`, {
-          credentials: "include",
+          credentials: 'include',
         });
-        if (!res.ok) throw new Error("Erro ao buscar perfil");
+        if (!res.ok) throw new Error('Erro ao buscar perfil');
 
         const data = await res.json();
         setFormData({
-          name: data.user.NOME || "",
-          musicalGenre: data.user.GENERO_MUSICAL || "",
-          comment: data.musician.COMENTARIO || "",
+          name: data.user.NOME || '',
+          musicalGenre: data.user.GENERO_MUSICAL || '',
+          comment: data.musician.COMENTARIO || '',
         });
 
         if (data.user.IMAGE) {
           setHasImage(true);
-          const imgRes = await fetch(`http://localhost:8081/pictures/${data.user.IMAGE}`, {
-            credentials: "include",
-          });
+          const imgRes = await fetch(
+            `http://localhost:8081/pictures/${data.user.IMAGE}`,
+            {
+              credentials: 'include',
+            }
+          );
           if (imgRes.ok) {
             const imgData = await imgRes.json();
-            const finalUrl = imgData.url.replace("dl=0", "raw=1");
+            const finalUrl = imgData.url.replace('dl=0', 'raw=1');
             setImagePreview(finalUrl);
           }
         }
       } catch (err) {
         console.error(err);
-        setErrors(["Não foi possível carregar seus dados. Tente novamente mais tarde."]);
+        setErrors([
+          'Não foi possível carregar seus dados. Tente novamente mais tarde.',
+        ]);
       }
     };
 
@@ -74,9 +78,9 @@ const EditProfile = () => {
 
   const validate = () => {
     const newErrors = [];
-    if (!formData.name) newErrors.push("Nome é obrigatório");
-    if (!formData.musicalGenre) newErrors.push("Gênero musical é obrigatório");
-    if (!formData.comment) newErrors.push("Descrição é obrigatória");
+    if (!formData.name) newErrors.push('Nome é obrigatório');
+    if (!formData.musicalGenre) newErrors.push('Gênero musical é obrigatório');
+    if (!formData.comment) newErrors.push('Descrição é obrigatória');
     setErrors(newErrors);
     return newErrors.length === 0;
   };
@@ -89,9 +93,9 @@ const EditProfile = () => {
     try {
       // 1. Atualiza dados textuais
       const res = await fetch(`http://localhost:8081/profile/update_user`, {
-        method: "PUT",
-        credentials: "include",
-        headers: { "Content-Type": "application/json" },
+        method: 'PUT',
+        credentials: 'include',
+        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           userMusician: { comment: formData.comment },
           user: {
@@ -100,26 +104,26 @@ const EditProfile = () => {
           },
         }),
       });
-      if (!res.ok) throw new Error("Erro ao atualizar perfil");
+      if (!res.ok) throw new Error('Erro ao atualizar perfil');
 
       // 2. Se houver imagem, faz upload
       if (imageFile) {
         const form = new FormData();
-        form.append("image", imageFile);
-        const method = hasImage ? "PUT" : "POST";
+        form.append('image', imageFile);
+        const method = hasImage ? 'PUT' : 'POST';
 
         const imgRes = await fetch(`http://localhost:8081/pictures`, {
           method,
-          credentials: "include",
+          credentials: 'include',
           body: form,
         });
-        if (!imgRes.ok) throw new Error("Erro ao enviar imagem");
+        if (!imgRes.ok) throw new Error('Erro ao enviar imagem');
       }
 
       // 🧹 Limpa o cache da imagem de perfil após atualização
       if (hasImage) {
-        const resProfile = await fetch("http://localhost:8081/profile/info", {
-          credentials: "include",
+        const resProfile = await fetch('http://localhost:8081/profile/info', {
+          credentials: 'include',
         });
         if (resProfile.ok) {
           const data = await resProfile.json();
@@ -136,7 +140,7 @@ const EditProfile = () => {
       navigate(-1);
     } catch (err) {
       console.error(err);
-      setErrors([err.message || "Erro inesperado"]);
+      setErrors([err.message || 'Erro inesperado']);
     } finally {
       setLoading(false);
     }
@@ -144,19 +148,19 @@ const EditProfile = () => {
 
   // === Render ===
   const musicalGenreOptions = [
-    "Rock",
-    "Sertanejo",
-    "Pop",
-    "Hip_Hop",
-    "Jazz",
-    "Blues",
-    "Classical",
-    "Electronic_Dance_Music",
-    "Country",
-    "Reggae",
-    "Funk",
-    "Disco",
-    "Gospel",
+    'Rock',
+    'Sertanejo',
+    'Pop',
+    'Hip_Hop',
+    'Jazz',
+    'Blues',
+    'Classical',
+    'Electronic_Dance_Music',
+    'Country',
+    'Reggae',
+    'Funk',
+    'Disco',
+    'Gospel',
   ];
 
   return (
@@ -184,7 +188,11 @@ const EditProfile = () => {
           <div className="flex flex-col items-center gap-4">
             <label className="w-32 h-32 rounded-full border-2 border-[#ECD182] overflow-hidden flex items-center justify-center cursor-pointer group">
               {imagePreview ? (
-                <img src={imagePreview} alt="Pré‑visualização" className="object-cover w-full h-full" />
+                <img
+                  src={imagePreview}
+                  alt="Pré‑visualização"
+                  className="object-cover w-full h-full"
+                />
               ) : (
                 <span className="text-sm text-[#ECD182] group-hover:opacity-80">
                   Selecionar foto
@@ -201,7 +209,9 @@ const EditProfile = () => {
 
           {/* Nome */}
           <div>
-            <label htmlFor="name" className="block text-sm text-[#ECD182] mb-1">Nome</label>
+            <label htmlFor="name" className="block text-sm text-[#ECD182] mb-1">
+              Nome
+            </label>
             <input
               type="text"
               id="name"
@@ -215,7 +225,12 @@ const EditProfile = () => {
 
           {/* Gênero musical */}
           <div>
-            <label htmlFor="musicalGenre" className="block text-sm text-[#ECD182] mb-1">Gênero musical</label>
+            <label
+              htmlFor="musicalGenre"
+              className="block text-sm text-[#ECD182] mb-1"
+            >
+              Gênero musical
+            </label>
             <select
               id="musicalGenre"
               name="musicalGenre"
@@ -226,14 +241,21 @@ const EditProfile = () => {
             >
               <option value="">Selecione...</option>
               {musicalGenreOptions.map((opt) => (
-                <option key={opt} value={opt}>{opt.replace(/_/g, ' ')}</option>
+                <option key={opt} value={opt}>
+                  {opt.replace(/_/g, ' ')}
+                </option>
               ))}
             </select>
           </div>
 
           {/* Descrição */}
           <div>
-            <label htmlFor="comment" className="block text-sm text-[#ECD182] mb-1">Descrição</label>
+            <label
+              htmlFor="comment"
+              className="block text-sm text-[#ECD182] mb-1"
+            >
+              Descrição
+            </label>
             <textarea
               id="comment"
               name="comment"

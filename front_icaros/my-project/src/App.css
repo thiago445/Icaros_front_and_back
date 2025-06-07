@@ -49,7 +49,7 @@
 }
 
 .section-title {
-  color: #ECD182;
+  color: #ecd182;
   margin-bottom: 20px;
   font-size: 1.5rem;
 }
@@ -66,7 +66,8 @@
   margin-bottom: 15px;
 }
 
-.post-input, .post-textarea {
+.post-input,
+.post-textarea {
   width: 100%;
   padding: 12px 15px;
   border: 1px solid #444;
@@ -77,12 +78,14 @@
   transition: border-color 0.3s;
 }
 
-.post-input:focus, .post-textarea:focus {
-  border-color: #ECD182;
+.post-input:focus,
+.post-textarea:focus {
+  border-color: #ecd182;
   outline: none;
 }
 
-.post-input::placeholder, .post-textarea::placeholder {
+.post-input::placeholder,
+.post-textarea::placeholder {
   color: #aaa;
 }
 
@@ -133,8 +136,8 @@
   align-items: center;
   gap: 8px;
   background-color: transparent;
-  color: #ECD182;
-  border: 1px solid #ECD182;
+  color: #ecd182;
+  border: 1px solid #ecd182;
   padding: 8px 15px;
   border-radius: 20px;
   cursor: pointer;
@@ -150,7 +153,8 @@
   gap: 10px;
 }
 
-.cancel-btn, .submit-btn {
+.cancel-btn,
+.submit-btn {
   padding: 8px 20px;
   border-radius: 20px;
   font-weight: 500;
@@ -169,7 +173,7 @@
 }
 
 .submit-btn {
-  background-color: #ECD182;
+  background-color: #ecd182;
   color: #1a1a1a;
   border: none;
 }
@@ -212,7 +216,7 @@
   height: 40px;
   border-radius: 50%;
   object-fit: cover;
-  border: 2px solid #ECD182;
+  border: 2px solid #ecd182;
 }
 
 .author-name {
@@ -241,7 +245,7 @@
 
 .post-title {
   margin: 0 0 10px;
-  color: #ECD182;
+  color: #ecd182;
   font-size: 16px;
 }
 
@@ -392,11 +396,11 @@
 
 .comment-input:focus {
   outline: none;
-  border-color: #ECD182;
+  border-color: #ecd182;
 }
 
 .comment-submit {
-  background-color: #ECD182;
+  background-color: #ecd182;
   color: #1a1a1a;
   border: none;
   padding: 8px 15px;

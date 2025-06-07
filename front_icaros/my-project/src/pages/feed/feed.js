@@ -1,9 +1,20 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation, Link } from 'react-router-dom';
 import {
-  FiHeart, FiMessageSquare, FiShare2, FiMoreHorizontal,
-  FiHome, FiSearch, FiCompass, FiFilm, FiSend,
-  FiPlusSquare, FiUser, FiMenu, FiX, FiBookmark
+  FiHeart,
+  FiMessageSquare,
+  FiShare2,
+  FiMoreHorizontal,
+  FiHome,
+  FiSearch,
+  FiCompass,
+  FiFilm,
+  FiSend,
+  FiPlusSquare,
+  FiUser,
+  FiMenu,
+  FiX,
+  FiBookmark,
 } from 'react-icons/fi';
 import { FaHeart, FaRegCompass, FaRegUser } from 'react-icons/fa';
 import { IoMdMore } from 'react-icons/io';
@@ -45,15 +56,18 @@ const Feed = () => {
       try {
         setProfileLoading(true);
         const response = await fetch('http://localhost:8081/profile/info', {
-          credentials: 'include'
+          credentials: 'include',
         });
         const data = await response.json();
         setUserProfile(data.user);
 
         if (data.user.IMAGE) {
-          const imgResponse = await fetch(`http://localhost:8081/pictures/${data.user.IMAGE}`, {
-            credentials: 'include'
-          });
+          const imgResponse = await fetch(
+            `http://localhost:8081/pictures/${data.user.IMAGE}`,
+            {
+              credentials: 'include',
+            }
+          );
           const imgData = await imgResponse.json();
           setUserProfileImage(imgData.url.replace('dl=0', 'raw=1'));
         }
@@ -80,27 +94,36 @@ const Feed = () => {
         console.log('Dados recebidos da API:', data); // Log para debug
 
         const processedPosts = await Promise.all(
-          data.map(async post => {
+          data.map(async (post) => {
             // Processa URLs do Dropbox
             const imageUrl = post.imageUrl?.includes('dropbox.com')
-              ? post.imageUrl.replace('www.dropbox.com', 'dl.dropboxusercontent.com')
+              ? post.imageUrl.replace(
+                  'www.dropbox.com',
+                  'dl.dropboxusercontent.com'
+                )
               : post.imageUrl;
 
             const videoUrl = post.videoUrl?.includes('dropbox.com')
-              ? post.videoUrl.replace('www.dropbox.com', 'dl.dropboxusercontent.com')
+              ? post.videoUrl.replace(
+                  'www.dropbox.com',
+                  'dl.dropboxusercontent.com'
+                )
               : post.videoUrl;
 
             // Busca a imagem de perfil do autor do post
             let userImageUrl = null;
             if (post.user?.img) {
               try {
-                const imgRes = await fetch(`http://localhost:8081/pictures/${post.user.img}`, {
-                  credentials: "include",
-                });
+                const imgRes = await fetch(
+                  `http://localhost:8081/pictures/${post.user.img}`,
+                  {
+                    credentials: 'include',
+                  }
+                );
 
                 if (imgRes.ok) {
                   const imgData = await imgRes.json();
-                  userImageUrl = imgData.url.replace("dl=0", "raw=1");
+                  userImageUrl = imgData.url.replace('dl=0', 'raw=1');
                 }
               } catch (error) {
                 console.error('Erro ao buscar imagem de perfil:', error);
@@ -111,14 +134,14 @@ const Feed = () => {
             const userData = {
               _id: post.userId || post.user?._id, // Pega o ID de userId ou user._id
               nome: post.user?.nome || 'Usuário',
-              img: userImageUrl || post.user?.img
+              img: userImageUrl || post.user?.img,
             };
 
             return {
               ...post,
               imageUrl,
               videoUrl,
-              user: userData
+              user: userData,
             };
           })
         );
@@ -135,13 +158,13 @@ const Feed = () => {
       fetchPosts();
     } else {
       // Garante que os posts recebidos via state também tenham a estrutura correta
-      const processedPosts = location.state.posts.map(post => ({
+      const processedPosts = location.state.posts.map((post) => ({
         ...post,
         user: {
           _id: post.userId || post.user?._id,
           nome: post.user?.nome || 'Usuário',
-          img: post.user?.img
-        }
+          img: post.user?.img,
+        },
       }));
       setLocalPosts(processedPosts);
       setLoading(false);
@@ -151,15 +174,18 @@ const Feed = () => {
   const handleLike = async (postId) => {
     try {
       // Atualização otimista
-      setLikedPosts(prev => ({
+      setLikedPosts((prev) => ({
         ...prev,
-        [postId]: !prev[postId]
+        [postId]: !prev[postId],
       }));
 
-      const response = await fetch(`http://localhost:8081/posts/${postId}/like`, {
-        method: 'POST',
-        credentials: 'include'
-      });
+      const response = await fetch(
+        `http://localhost:8081/posts/${postId}/like`,
+        {
+          method: 'POST',
+          credentials: 'include',
+        }
+      );
 
       if (!response.ok) {
         throw new Error('Erro ao curtir post');
@@ -167,15 +193,16 @@ const Feed = () => {
 
       const updatedPost = await response.json();
 
-      setLocalPosts(prev => prev.map(post =>
-        post._id === postId ? { ...post, likes: updatedPost.likes } : post
-      ));
-
+      setLocalPosts((prev) =>
+        prev.map((post) =>
+          post._id === postId ? { ...post, likes: updatedPost.likes } : post
+        )
+      );
     } catch (error) {
-      console.error("Erro ao curtir:", error);
-      setLikedPosts(prev => ({
+      console.error('Erro ao curtir:', error);
+      setLikedPosts((prev) => ({
         ...prev,
-        [postId]: !prev[postId]
+        [postId]: !prev[postId],
       }));
     }
   };
@@ -202,7 +229,9 @@ const Feed = () => {
                     className="w-6 h-6 object-contain"
                   />
                 </div>
-                <span className="text-2xl font-bold group-hover:text-[#f8e4a8] transition-colors">Icaros</span>
+                <span className="text-2xl font-bold group-hover:text-[#f8e4a8] transition-colors">
+                  Icaros
+                </span>
               </Link>
             </div>
 
@@ -221,38 +250,57 @@ const Feed = () => {
                       />
                     </div>
                     <div>
-                      <p className="font-medium text-sm">{userProfile?.NOME || 'Usuário'}</p>
-                      <p className="text-gray-400 text-xs">@{userProfile?.USERNAME?.toLowerCase() || 'usuario'}</p>
+                      <p className="font-medium text-sm">
+                        {userProfile?.NOME || 'Usuário'}
+                      </p>
+                      <p className="text-gray-400 text-xs">
+                        @{userProfile?.USERNAME?.toLowerCase() || 'usuario'}
+                      </p>
                     </div>
                   </Link>
                 </div>
 
                 <li>
-                  <a href="#" className="flex items-center space-x-4 p-3 rounded-lg hover:bg-gray-900">
+                  <a
+                    href="#"
+                    className="flex items-center space-x-4 p-3 rounded-lg hover:bg-gray-900"
+                  >
                     <FiSearch size={24} className="text-white" />
                     <span className="font-medium">Pesquisar</span>
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="flex items-center space-x-4 p-3 rounded-lg hover:bg-gray-900">
+                  <a
+                    href="#"
+                    className="flex items-center space-x-4 p-3 rounded-lg hover:bg-gray-900"
+                  >
                     <FaRegCompass size={24} className="text-white" />
                     <span className="font-medium">Explorar</span>
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="flex items-center space-x-4 p-3 rounded-lg hover:bg-gray-900">
+                  <a
+                    href="#"
+                    className="flex items-center space-x-4 p-3 rounded-lg hover:bg-gray-900"
+                  >
                     <FiFilm size={24} className="text-white" />
                     <span className="font-medium">Reels</span>
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="flex items-center space-x-4 p-3 rounded-lg hover:bg-gray-900">
+                  <a
+                    href="#"
+                    className="flex items-center space-x-4 p-3 rounded-lg hover:bg-gray-900"
+                  >
                     <FiSend size={24} className="text-white" />
                     <span className="font-medium">Mensagens</span>
                   </a>
                 </li>
                 <li>
-                  <Link to="/CreatePost" className="flex items-center space-x-4 p-3 rounded-lg hover:bg-gray-900">
+                  <Link
+                    to="/CreatePost"
+                    className="flex items-center space-x-4 p-3 rounded-lg hover:bg-gray-900"
+                  >
                     <FiPlusSquare size={24} className="text-white" />
                     <span className="font-medium">Criar</span>
                   </Link>
@@ -289,7 +337,9 @@ const Feed = () => {
                     className="w-6 h-6 object-contain"
                   />
                 </div>
-                <span className="text-2xl font-bold group-hover:text-[#f8e4a8] transition-colors">Icaros</span>
+                <span className="text-2xl font-bold group-hover:text-[#f8e4a8] transition-colors">
+                  Icaros
+                </span>
               </Link>
               <button
                 onClick={toggleMobileMenu}
@@ -313,38 +363,57 @@ const Feed = () => {
                       />
                     </div>
                     <div>
-                      <p className="font-medium">{userProfile?.NOME || 'Usuário'}</p>
-                      <p className="text-gray-400 text-sm">@{userProfile?.USERNAME?.toLowerCase() || 'usuario'}</p>
+                      <p className="font-medium">
+                        {userProfile?.NOME || 'Usuário'}
+                      </p>
+                      <p className="text-gray-400 text-sm">
+                        @{userProfile?.USERNAME?.toLowerCase() || 'usuario'}
+                      </p>
                     </div>
                   </Link>
                 </div>
 
                 <li>
-                  <a href="#" className="flex items-center space-x-4 p-3 text-xl">
+                  <a
+                    href="#"
+                    className="flex items-center space-x-4 p-3 text-xl"
+                  >
                     <FiSearch size={28} className="text-white" />
                     <span className="font-medium">Pesquisar</span>
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="flex items-center space-x-4 p-3 text-xl">
+                  <a
+                    href="#"
+                    className="flex items-center space-x-4 p-3 text-xl"
+                  >
                     <FaRegCompass size={28} className="text-white" />
                     <span className="font-medium">Explorar</span>
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="flex items-center space-x-4 p-3 text-xl">
+                  <a
+                    href="#"
+                    className="flex items-center space-x-4 p-3 text-xl"
+                  >
                     <FiFilm size={28} className="text-white" />
                     <span className="font-medium">Reels</span>
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="flex items-center space-x-4 p-3 text-xl">
+                  <a
+                    href="#"
+                    className="flex items-center space-x-4 p-3 text-xl"
+                  >
                     <FiSend size={28} className="text-white" />
                     <span className="font-medium">Mensagens</span>
                   </a>
                 </li>
                 <li>
-                  <Link to="/CreatePost" className="flex items-center space-x-4 p-3 text-xl">
+                  <Link
+                    to="/CreatePost"
+                    className="flex items-center space-x-4 p-3 text-xl"
+                  >
                     <FiPlusSquare size={28} className="text-white" />
                     <span className="font-medium">Criar</span>
                   </Link>
@@ -356,7 +425,9 @@ const Feed = () => {
       )}
 
       {/* Conteúdo Principal */}
-      <div className={`flex-1 overflow-y-auto ${!isMobile ? 'ml-64 ml-2 mr-4' : ''}`}>
+      <div
+        className={`flex-1 overflow-y-auto ${!isMobile ? 'ml-64 ml-2 mr-4' : ''}`}
+      >
         <header className="sticky top-0 z-10 bg-black bg-opacity-90 backdrop-blur-sm border-b border-gray-800 p-4 md:hidden">
           <h1 className="text-xl font-bold text-[#ECD182]">Música Connect</h1>
         </header>
@@ -380,10 +451,12 @@ const Feed = () => {
           ) : localPosts.length === 0 ? (
             <div className="flex flex-col items-center justify-center py-20">
               <p className="text-gray-400 mb-2">Nenhuma postagem encontrada</p>
-              <p className="text-[#ECD182]">Seja o primeiro a compartilhar algo!</p>
+              <p className="text-[#ECD182]">
+                Seja o primeiro a compartilhar algo!
+              </p>
             </div>
           ) : (
-            localPosts.map(post => (
+            localPosts.map((post) => (
               <PostCard
                 key={post._id}
                 post={post}
@@ -404,7 +477,7 @@ const PostCard = ({ post, userProfile, imageProfile, isLiked, onLike }) => {
   const postDate = new Date(post.createdAt).toLocaleString('pt-BR', {
     day: '2-digit',
     month: '2-digit',
-    year: 'numeric'
+    year: 'numeric',
   });
 
   // Verifica se temos um ID válido para o usuário
@@ -419,11 +492,17 @@ const PostCard = ({ post, userProfile, imageProfile, isLiked, onLike }) => {
   let postVideoUrl = post.videoUrl;
 
   if (postImageUrl && postImageUrl.includes('dropbox.com')) {
-    postImageUrl = postImageUrl.replace('www.dropbox.com', 'dl.dropboxusercontent.com');
+    postImageUrl = postImageUrl.replace(
+      'www.dropbox.com',
+      'dl.dropboxusercontent.com'
+    );
   }
 
   if (postVideoUrl && postVideoUrl.includes('dropbox.com')) {
-    postVideoUrl = postVideoUrl.replace('www.dropbox.com', 'dl.dropboxusercontent.com');
+    postVideoUrl = postVideoUrl.replace(
+      'www.dropbox.com',
+      'dl.dropboxusercontent.com'
+    );
   }
 
   return (
@@ -462,10 +541,7 @@ const PostCard = ({ post, userProfile, imageProfile, isLiked, onLike }) => {
             className="w-full h-full object-cover"
           />
         ) : postVideoUrl ? (
-          <video
-            controls
-            className="w-full h-full object-cover"
-          >
+          <video controls className="w-full h-full object-cover">
             <source src={postVideoUrl} type="video/mp4" />
             Seu navegador não suporta vídeos HTML5.
           </video>
@@ -479,10 +555,7 @@ const PostCard = ({ post, userProfile, imageProfile, isLiked, onLike }) => {
       <div className="p-3">
         <div className="flex justify-between mb-2">
           <div className="flex space-x-4">
-            <button
-              onClick={onLike}
-              className="focus:outline-none"
-            >
+            <button onClick={onLike} className="focus:outline-none">
               {isLiked ? (
                 <FaHeart className="text-red-500" size={24} />
               ) : (
