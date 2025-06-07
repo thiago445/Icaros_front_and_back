@@ -18,17 +18,18 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Garante que todos os arquivos sejam baixados
 
-      - name: Verify lock files
+      # Debug: Lista a estrutura de arquivos
+      - name: Debug - Show directory structure
         run: |
-          if [ ! -f front_icaros/my-project/package-lock.json ]; then
-            echo "::error::Frontend lock file not found!"
-            exit 1
-          fi
-          if [ ! -f icaros_hibrido/package-lock.json ]; then
-            echo "::error::Backend lock file not found!"
-            exit 1
-          fi
+          echo "Estrutura do projeto:"
+          tree -L 3 -a
+          echo "Conteúdo de front_icaros/my-project:"
+          ls -la front_icaros/my-project
+          echo "Conteúdo de icaros_hibrido:"
+          ls -la icaros_hibrido
 
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v4
@@ -42,7 +43,10 @@ jobs:
       # Frontend
       - name: Install frontend dependencies
         working-directory: front_icaros/my-project
-        run: npm ci --audit=false
+        run: |
+          npm ci --no-audit
+          echo "Frontend node_modules size:"
+          du -sh node_modules
 
       - name: Run frontend lint
         working-directory: front_icaros/my-project
@@ -59,7 +63,10 @@ jobs:
       # Backend
       - name: Install backend dependencies
         working-directory: icaros_hibrido
-        run: npm ci --audit=false
+        run: |
+          npm ci --no-audit
+          echo "Backend node_modules size:"
+          du -sh node_modules
 
       - name: Run backend lint
         working-directory: icaros_hibrido
@@ -72,3 +79,12 @@ jobs:
       - name: Run backend tests
         working-directory: icaros_hibrido
         run: npm test -- --ci
+
+      # Notificação opcional (descomente se quiser)
+      # - name: Notify Slack on success
+      #   if: success()
+      #   uses: act10ns/slack@v1
+      #   with:
+      #     job-status: ${{ job.status }}
+      #   env:
+      #     SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
